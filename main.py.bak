@@ -1,0 +1,1013 @@
+import os
+import uuid
+import logging
+import json
+import cv2
+import numpy as np
+import torch
+import re
+import fitz  # PyMuPDF
+from fastapi import FastAPI, UploadFile, File, HTTPException, BackgroundTasks
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
+from typing import List, Dict, Any, Optional
+from datetime import datetime
+from docx import Document
+from transformers import LayoutLMv3Processor, LayoutLMv3ForSequenceClassification
+from PIL import Image
+import io
+from fuzzywuzzy import fuzz
+from fastapi.responses import FileResponse
+
+# Phase 2 Imports
+from template_engine.template_models import TemplateSchema
+from template_engine.template_extractor import extract_template_schema
+from template_engine.template_manager import register_template, list_templates, get_template_schema
+from template_engine.template_mapper import fill_template
+
+
+
+
+# Setup Logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger("CV-Reformatter-MVP")
+
+app = FastAPI(title="CV Reformatter MVP")
+app.state.max_file_size = 50 * 1024 * 1024  # 50MB
+
+# CORS for Streamlit
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:8501", "http://localhost:8500", "*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/test-upload")
+def test_upload():
+    return {"status": "UPLOAD OK"}
+
+
+# Directories
+INPUT_DIR = "input"
+OUTPUT_DIR = "output"
+TEMPLATES_DIR = "templates"
+
+os.makedirs(INPUT_DIR, exist_ok=True)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(TEMPLATES_DIR, exist_ok=True)
+os.makedirs("debug", exist_ok=True)
+
+# Static Files
+app.mount("/input", StaticFiles(directory=INPUT_DIR), name="input")
+app.mount("/output", StaticFiles(directory=OUTPUT_DIR), name="output")
+
+# Model Initialization
+try:
+    MODEL_NAME = "microsoft/layoutlmv3-base"
+    processor = LayoutLMv3Processor.from_pretrained(MODEL_NAME, apply_ocr=True)
+    model = LayoutLMv3ForSequenceClassification.from_pretrained(MODEL_NAME).to("cpu")
+    logger.info("LayoutLMv3 model loaded successfully on CPU.")
+except Exception as e:
+    logger.error(f"Failed to load LayoutLMv3: {e}")
+    processor = None
+    model = None
+
+class ProcessResponse(BaseModel):
+    job_id: str
+    status: str
+    confidence_score: float
+    extracted_data: Dict[str, Any]
+    docx_url: Optional[str] = None
+    certifications: Optional[List[Dict[str, str]]] = None # Not strictly needed if in extracted_data but consistent
+
+# Robust Section Detection keywords
+SECTION_KEYWORDS = [
+    "summary", "profile", "experience", "education", "projects", "skills", 
+    "tools", "certifications", "declaration", "languages", "personal"
+]
+
+# Hard-coded Section Boundaries
+SECTION_HEADERS = [
+    "profile summary", "work experience", "professional experience", 
+    "education", "project details", "projects", "key skills", 
+    "other skills", "tools", "certifications", "declaration", "summary"
+]
+
+def is_any_section_header(line: str) -> bool:
+    """Strictly checks for section transitions."""
+    l = line.strip().lower()
+    if not l or len(l) > 40: return False
+    # Exact match for common headers
+    if l in SECTION_HEADERS: return True
+    # Startswith match for headers that often have dates/extra text
+    for k in ["education", "experience", "projects", "skills"]:
+        if l.startswith(k) and len(l) < 25: return True
+    return False
+
+SECTION_HEAD_SUMMARY_RE = re.compile(r'^\s*(Profile\s+)?Summary\b|^\s*Profile\b', re.I)
+SECTION_HEAD_EDUCATION_RE = re.compile(r'^\s*Education\b', re.I)
+SECTION_HEAD_PROJECTS_RE = re.compile(r'^\s*Projects?|^\s*Project\s+Details\b', re.I)
+SECTION_HEAD_SKILLS_RE = re.compile(r'^\s*(Key\s+)?Skills?\b|^\s*Tools\b', re.I)
+SECTION_HEAD_EXPERIENCE_RE = re.compile(r'^\s*Experience|^\s*Work\s+Experience\b', re.I)
+SECTION_HEAD_CERTS_RE = re.compile(r'^\s*(certifications?|courses?|awards?|training and certifications?|training)\b', re.I)
+DATE_RE = re.compile(r'\b(19|20)\d{2}\b|\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b', re.I)
+
+# Deprecated fallback
+TOP_SECTION_RE = re.compile(r'^(Summary|Profile|Experience|Education|Projects|Skills|Certifications|Tools)\b', re.I)
+
+
+# Preprocessing Helpers
+
+def detect_section(line: str) -> Optional[str]:
+    """Helper to detect CV sections using fuzzy matching."""
+    if not line or len(line) > 50: return None
+    
+    # Normalize: lowercase and strip punctuation
+    clean = re.sub(r'[^\w\s]', '', line.lower().strip())
+    if not clean: return None
+
+    mapping = {
+        "experience": ["work experience", "professional experience", "experience", "employment history", "career history", "experience timeline", "internship experience"],
+        "projects": ["projects", "project details", "academic projects", "featured projects", "major projects", "key projects"],
+        "skills": ["skills", "technical skills", "key skills", "core skills", "skills & tools", "tech stack", "tools & technologies", "key skills and knowledge", "other skills", "tools", "technical skills matrix", "technology matrix", "technical competencies"]
+    }
+
+    for section, variants in mapping.items():
+        for v in variants:
+            # High threshold for fuzzy match to avoid false positives on list items
+            if v == clean or fuzz.ratio(clean, v) > 85:
+                return section
+    return None
+
+def preprocess_image(image_bytes: bytes, filename: str = "") -> str:
+    """Extracts text from PDF or Image."""
+    full_text = ""
+    if filename.lower().endswith('.pdf'):
+        doc = fitz.open(stream=image_bytes, filetype="pdf")
+        for page in doc:
+            full_text += page.get_text()
+    else:
+        # Simple placeholder for OCR - in production we use pytesseract
+        full_text = "OCR Text Placeholder"
+    return full_text
+
+def extract_name_and_contact(image_bytes: bytes, filename: str) -> Dict[str, str]:
+    """Uses font-size heuristics to extract name and regex for contact info."""
+    results = {"name": "Applicant", "email": "N/A", "phone": "N/A", "linkedin": "N/A"}
+    
+    if not filename.lower().endswith('.pdf'):
+        return results
+
+    try:
+        doc = fitz.open(stream=image_bytes, filetype="pdf")
+        first_page = doc[0]
+        data = first_page.get_text("dict")
+        
+        spans = []
+        for b in data["blocks"]:
+            if "lines" in b:
+                for l in b["lines"]:
+                    for s in l["spans"]:
+                        spans.append(s)
+        
+        if not spans: return results
+        
+        # 1. Identify NAME: All spans with the max font size in the top area
+        candidate_spans = [s for s in spans if len(s['text'].strip()) > 2 and re.search('[a-zA-Z]', s['text'])]
+        if candidate_spans:
+            max_size = max(s['size'] for s in candidate_spans)
+            # Find all spans within 1pt of max_size
+            name_parts = [s['text'].strip() for s in candidate_spans if abs(s['size'] - max_size) < 1.0]
+            # Join them
+            full_name = " ".join(dict.fromkeys(name_parts))
+            
+            # GUARD: A valid name is usually 1-4 words and < 50 chars
+            if len(full_name.split()) <= 4 and len(full_name) < 50:
+                 results["name"] = full_name
+            else:
+                 # If too long, try the VERY FIRST high-confidence span only
+                 first_span = candidate_spans[0]['text'].strip()
+                 if len(first_span.split()) <= 4:
+                     results["name"] = first_span
+                 else:
+                     results["name"] = "Applicant"
+            
+        # 2. Identify CONTACT: Use regex on the raw text of the first page
+        raw_text = first_page.get_text()
+        email_match = re.search(r'[\w\.-]+@[\w\.-]+\.\w+', raw_text)
+        phone_match = re.search(r'(\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4,}', raw_text)
+        linkedin_match = re.search(r'linkedin\.com/in/[\w\.-]+', raw_text)
+        
+        if email_match: results["email"] = email_match.group(0)
+        if phone_match: results["phone"] = phone_match.group(0)
+        if linkedin_match: results["linkedin"] = linkedin_match.group(0)
+            
+    except Exception as e:
+        logger.error(f"Error extracting name: {e}")
+        
+    return results
+
+def is_responsibility_line(line: str) -> bool:
+    """Detects if a line represents an action or responsibility."""
+    # Strip bullets and symbols
+    clean = line.lstrip("▪•- *").strip()
+    if not clean: return False
+    
+    # Rule 1: Starts with a bullet point
+    if any(line.lstrip().startswith(b) for b in ["▪", "•", "-", "*"]):
+        return True
+    
+    # Rule 2: Starts with a strong action verb
+    verbs = ["designed", "developed", "implemented", "built", "led", "managed", 
+             "created", "optimized", "improved", "migrated", "architected", "configured"]
+    
+    first_word = re.sub(r'[^\w]', '', clean.split()[0].lower()) if clean.split() else ""
+    if first_word in verbs:
+        return True
+        
+    return False
+
+def is_location(text: str) -> bool:
+    """Heuristic to detect if a string is likely a location."""
+    if not text: return False
+    places = ["kochi", "bangalore", "mumbai", "india", "trivandrum", "ireland", "us", "thailand", "san francisco", "ca", "calicut"]
+    text_lower = text.lower()
+    
+    # Check if any place is a standalone word or the string ends with it
+    for p in places:
+        if p in text_lower and len(text.split()) <= 3:
+            return True
+    if text_lower.endswith(", india") or text_lower.endswith(", us"):
+        return True
+    return False
+
+def get_cv_segments(text: str) -> Dict[str, str]:
+    """Splits raw CV text into logical section blocks with high-precision segmentation."""
+    lines = text.split('\n')
+    segments = {
+        "summary": [], "experience": [], "education": [], 
+        "projects": [], "skills": [], "certifications": [], "meta": []
+    }
+    
+    current_key = "summary"
+    
+    # Section Header Detection Patterns
+    SECT_MAP = {
+        "experience": ["work experience", "professional experience", "employment history", "career history", "experience summary", "employment details"],
+        "education": ["education", "academic qualification", "academic profile", "academic background", "academics", "educational qualification"],
+        "projects": ["projects", "key projects", "project details", "project portfolio", "technical projects", "major projects"],
+        "skills": ["skills", "technical skills", "key skills", "skill set", "core competencies", "tools", "technologies", "tech stack", "software skills"],
+        "certifications": ["certifications", "training", "courses", "awards", "achievement"],
+        "summary": ["profile summary", "professional summary", "summary", "profile", "profile highlights", "career highlights", "professional profile"]
+    }
+
+    for line in lines:
+        l_orig = line.strip()
+        if not l_orig: continue
+        
+        # Clean line for detection: strip bullets, icons, and whitespace
+        l_clean = re.sub(r'^[•▪\-\*▪➢\d\.\s\t]+', '', l_orig).strip().lower()
+        
+        # Detection: Headers are usually short (max 45 chars)
+        found_new = False
+        if 2 < len(l_clean) < 45:
+             for key, synonyms in SECT_MAP.items():
+                 # Match if the clean line exactly matches or starts with a synonym
+                 # We check for suffix space/colon to avoid partial word matches
+                 if any(l_clean == s or l_clean.startswith(s + " ") or l_clean.startswith(s + ":") or (s in l_clean and len(l_clean) < len(s) + 5) for s in synonyms):
+                     # Guard: Avoid false positives in projects
+                     if key == "skills" and current_key == "projects" and ":" in l_orig:
+                         continue
+                     
+                     if key != current_key:
+                         logger.info(f"Segment Switch: {current_key} -> {key} at line: '{l_orig}'")
+                         current_key = key
+                     found_new = True
+                     break
+        
+        if not found_new:
+            segments[current_key].append(line)
+            
+    return {k: "\n".join(v) for k, v in segments.items()}
+
+def extract_summary(text: str) -> str:
+    """Standard summary extraction - Stable Version."""
+    noise_re = re.compile(r'^[•▪\-\*▪\t\s]+')
+    sentences = []
+    
+    text = text.replace("[FILL HERE]", "").strip()
+    for line in text.split('\n'):
+        l = noise_re.sub('', line).strip()
+        if not l or len(l) < 10: continue
+        
+        candidates = re.split(r'(?<=[.!?])\s+', l)
+        for cand in candidates:
+            cand = cand.strip()
+            if not cand: continue
+            if not any(fuzz.ratio(cand.lower(), ex.lower()) > 85 for ex in sentences):
+                sentences.append(cand)
+                
+    result = " ".join(sentences)
+    if result and result[-1].isalnum():
+        result += "."
+    return result
+
+def extract_skills(text: str, candidate_name: str = "") -> List[str]:
+    """Hyper-Strict Technical Skill extraction - Sentence-Proof and Role-Aware."""
+    skills = []
+    text_low = text.lower()
+    
+    # 1. Master Tech Dictionary (Protect multi-word terms)
+    tech_dictionary = [
+        "visual studio code", "vs code", "core php", "sql server", "google cloud", "web component", 
+        "node js", "react native", "tailwind css", "elastic search", "lit element", "lit-element",
+        "laravel", "yii", "yii1", "javascript", "ajax", "html", "css", "postgresql", "mysql", "mongodb",
+        "elasticsearch", "kibana", "postman", "git", "asana", "aws", "docker", "kubernetes",
+        "flask", "django", "express", "angular", "react", "vue", "typescript", "python", "lit",
+        "node.js", "angular.js", "react.js", "jquery", "json", "html5", "css3", "lamp stack"
+    ]
+    
+    # 2. Comprehensive Non-Technical Blacklist
+    SKILL_BLACKLIST = [
+        "diverse work environments", "software documentation", "maintain software documentation",
+        "client organizations", "enhancements", "application", "developer", "development",
+        "team lead", "technical lead", "professional skills", "other skills", "soft skills",
+        "interpersonal", "communication", "leadership", "management", "proactive", "delivery",
+        "project details", "responsibilities", "profile summary", "work experience", "education",
+        "technical competencies", "summary", "profile", "career", "snapshot", "details"
+    ]
+    
+    # 3. Action Verbs & Roles
+    VERBS_AND_ROLES = ["managed", "designed", "developed", "led", "analysis", "review", "allocation", 
+                       "delivery", "application", "developer", "engineer", "designer", "architect",
+                       "lead", "manager", "specialist", "consultant", "analyst"]
+
+    prose_indicators = ["experienced in", "skilled in", "knowledge of", "including", "technologies", "frameworks"]
+    is_prose = any(indicator in text_low for indicator in prose_indicators) or len(text.split()) > 20
+    
+    if is_prose:
+        logger.info("Skill extraction: Switching to PROSE DICTIONARY SCAN.")
+        for tech in tech_dictionary:
+            pattern = r'\b' + re.escape(tech) + r'\b'
+            if re.search(pattern, text_low):
+                match = re.search(pattern, text, re.IGNORECASE)
+                if match:
+                    val = match.group(0).strip(" .(),")
+                    if val.lower() not in [s.lower() for s in skills]:
+                        skills.append(val)
+        if not skills: is_prose = False
+
+    if not is_prose:
+        logger.info("Skill extraction: Switching to LIST-BASED PARSING.")
+        noise_re = re.compile(r'^[•▪\-\*▪\x00-\x1f\x7f-\x9f\s\t/]+')
+        name_parts = candidate_name.lower().split() if candidate_name else []
+
+        for line in text.split('\n'):
+            line = line.strip()
+            if not line or len(line) > 120: continue
+            if name_parts and any(p in line.lower() for p in name_parts if len(p) > 2): continue
+
+            line = noise_re.sub('', line).strip()
+            
+            # Sentence handling
+            if len(line.split()) > 8:
+                 for tech in tech_dictionary:
+                    if tech in line.lower():
+                        if tech.lower() not in [s.lower() for s in skills]: skills.append(tech.title())
+                 continue
+
+            parts = re.split(r'[,\u2022•;|]', line)
+            for part in parts:
+                t = part.strip(" .()[]/\\")
+                if not t or len(t) < 2: continue
+                t_low = t.lower()
+                
+                # REJECTION FILTERS
+                if t_low in [s.lower() for s in skills]: continue
+                if any(v == t_low for v in VERBS_AND_ROLES): continue
+                if any(b in t_low for b in SKILL_BLACKLIST): continue
+                if t_low in ["tools", "technologies", "environment", "stacks"]: continue
+                
+                # Multi-word strictness
+                if " " in t:
+                    # If it's a long phrase, it MUST be in the tech dictionary
+                    if len(t.split()) >= 3:
+                        if not any(tech == t_low for tech in tech_dictionary): continue
+                    # Roles check (e.g. "Software Developer" -> Skip)
+                    if any(r in t_low for r in ["developer", "engineer", "lead", "manager"]): continue
+
+                skills.append(t)
+                
+    return skills
+
+def is_valid_institution(text: str) -> bool:
+    """Strict institution validation."""
+    if not text or len(text) < 5: return False
+    l_low = text.lower()
+    
+    # Aggressive block list
+    block_words = ["training", "certification", "experience", "summary", "project", "details", "highlights", "profile", "career", "technical"]
+    if any(x in l_low for x in block_words):
+        return False
+        
+    # Valid indicators
+    inst_keywords = ["university", "college", "institute", "school", "academy", "vidyalaya", "management", "science", "technology"]
+    if any(k in l_low for k in inst_keywords):
+        return True
+    
+    # Length and casing check
+    words = text.split()
+    if 2 <= len(words) <= 8 and all(w[0].isupper() for w in words if w.isalpha()):
+        return True
+        
+    return False
+
+def is_likely_role(text: str) -> bool:
+    """Check if text contains role-related keywords."""
+    roles = ["engineer", "developer", "manager", "lead", "architect", "analyst", "coder", "designer", "specialist", "intern", "trainee"]
+    text_lower = text.lower()
+    return any(r in text_lower for r in roles)
+
+def extract_work_experience(text: str) -> List[Dict[str, str]]:
+    """Standard experience extraction - Stable Phase 2 Version."""
+    experience = []
+    lines = text.split('\n')
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if not line:
+            i += 1
+            continue
+            
+        has_date = bool(DATE_RE.search(line))
+        has_sep = any(s in line for s in ['|', '-', '–', ',', '\t'])
+        
+        if has_date and has_sep and len(line) < 150:
+            if not is_responsibility_line(line):
+                # Split using common separators
+                parts = re.split(r'\s*[|–-]\s*|\t+|,', line)
+                parts = [p.strip() for p in parts if p.strip()]
+                
+                company = parts[0]
+                role = parts[1] if len(parts) > 1 else "N/A"
+                duration = parts[2] if len(parts) > 2 else "N/A"
+                location = "N/A"
+                
+                # Role Lookahead
+                if role == "N/A" and i + 1 < len(lines):
+                    next_l = lines[i+1].strip()
+                    if next_l and not is_responsibility_line(next_l) and not DATE_RE.search(next_l):
+                        role = next_l
+                        i += 1
+                
+                resps = []
+                j = i + 1
+                while j < len(lines):
+                    l_sub = lines[j].strip()
+                    if not l_sub or is_any_section_header(l_sub): break
+                    if is_responsibility_line(l_sub) or len(l_sub) > 20:
+                        resps.append(l_sub.lstrip("▪•- *").strip())
+                    j += 1
+                
+                experience.append({
+                    "company": company,
+                    "role": role,
+                    "duration": duration,
+                    "location": location,
+                    "responsibilities": " ".join(resps)
+                })
+                i = j
+                continue
+        i += 1
+    return experience
+
+def extract_projects(text: str, companies: List[str] = None) -> List[Dict[str, Any]]:
+    """Identifies projects while filtering out company names from experience."""
+    projects = []
+    lines = text.split('\n')
+    current = None
+    
+    company_names = [c.lower() for c in (companies or [])]
+    
+    def start_new(title):
+        return {"title": title, "tech": "N/A", "duration": "N/A", "role": "N/A", "desc": [], "role_text": ""}
+
+    def flush_project():
+        nonlocal current
+        if current:
+            # Validate: Title shouldn't be a company name or section header
+            t_low = current['title'].lower()
+            if any(c in t_low for c in company_names) and len(t_low) < 50:
+                 current = None
+                 return
+            
+            if len(current['title']) < 3 or is_any_section_header(current['title']):
+                current = None
+                return
+
+            desc_str = " ".join(current['desc'])
+            # Basic cleanup of desc
+            desc_str = desc_str.replace("Responsibilities:", "").strip()
+            
+            projects.append({
+                "title": current['title'],
+                "tech": current['tech'] if current.get('tech') != "N/A" else current.get('stack', 'N/A'),
+                "duration": current['duration'],
+                "role": current.get('role_text', current['role']),
+                "details": desc_str
+            })
+            current = None
+
+    # Metadata patterns
+    META_KEYS = {
+        "client": re.compile(r'^(client|customer|organization)\s*:', re.I),
+        "role": re.compile(r'^(role|position)\s*:', re.I),
+        "tech": re.compile(r'^(tech stack|technologies|environment|tools|stack)\s*:', re.I),
+        "duration": re.compile(r'^(duration|period|time)\s*:', re.I),
+        "overview": re.compile(r'^(project overview|description|summary)\s*:', re.I)
+    }
+
+    for i, line in enumerate(lines):
+        l = re.sub(r'^[•▪\-\*▪\x00-\x1f\x7f-\x9f\s]+', '', line).strip()
+        if not l: continue
+        l_low = l.lower()
+        
+        # Meta Check
+        is_meta = False
+        for key, ptrn in META_KEYS.items():
+            if ptrn.match(l):
+                is_meta = True
+                val = l.split(":", 1)[1].strip()
+                if not current: current = start_new("Project")
+                
+                if key == "tech": current['tech'] = val
+                elif key == "duration": current['duration'] = val
+                elif key == "role": current['role_text'] = val
+                elif key == "overview": current['desc'].append(val)
+                break
+        
+        if is_meta: continue
+        
+        # Piped Header Check (Role | Project | Date)
+        if '|' in l and len(l) < 120:
+            flush_project()
+            parts = l.split('|')
+            current = start_new(parts[0].strip())
+            if len(parts) > 1: current['role_text'] = parts[1].strip()
+            continue
+            
+        # Title detection
+        if 5 < len(l) < 100 and not l.endswith('.') and l[0].isupper():
+             # If next line looks like project meta, it's definitely a title
+             is_def_title = False
+             if i + 1 < len(lines):
+                 nl = lines[i+1].strip().lower()
+                 if any(k in nl for k in ["role:", "tech stack:", "technologies:", "project overview:"]):
+                     is_def_title = True
+             
+             if is_def_title:
+                 flush_project()
+                 current = start_new(l)
+                 continue
+
+        if current:
+            if is_any_section_header(l):
+                flush_project()
+            else:
+                if l not in current['desc']:
+                    current['desc'].append(l)
+
+    flush_project()
+    return projects
+
+def extract_education(text: str) -> List[Dict[str, str]]:
+    """Strict education extraction - requires both degree keyword AND reasonable context."""
+    education = []
+    lines = text.split('\n')
+    
+    # Degress keywords
+    degree_keywords = ["bachelor", "master", "degree", "diploma", "b.a", "b.s", "m.a", "m.s", "btech", "mtech", "b.tech", "m.tech", "bca", "mca", "b.sc", "m.sc", "graduate", "certificate"]
+    
+    for i, line in enumerate(lines):
+        l = re.sub(r'^[•▪\-\*▪\s\t]+', '', line).strip()
+        if not l or len(l) < 5: continue
+        
+        l_low = l.lower()
+        
+        # RULE 1: Must have a degree keyword
+        if not any(k in l_low for k in degree_keywords):
+            continue
+            
+        # RULE 2: Exclude lines that look like Work Experience (Role | Company)
+        if "|" in l or " - " in l:
+            if any(r in l_low for r in ["engineer", "developer", "manager", "lead", "architect", "analyst", "technologies", "informatics"]):
+                continue
+
+        # RULE 3: Exclude long sentences (usually duties found in bleeding segments)
+        if len(l.split()) > 15:
+            continue
+
+        year_match = re.search(r'\b(19|20)\d{2}\b', l)
+        year = year_match.group(0) if year_match else "N/A"
+        
+        title = l.replace(year, "").strip(" -–,|•▪")
+        parts = re.split(r'[–-]|\|', title)
+        degree = parts[0].strip()
+        inst = "N/A"
+        
+        if len(parts) > 1:
+            inst = parts[1].strip()
+        else:
+            # Look for institution in neighbors
+            for k in range(max(0, i-1), min(i+3, len(lines))):
+                if k == i: continue
+                nl = lines[k].strip()
+                if nl and is_valid_institution(nl) and not any(kw in nl.lower() for kw in degree_keywords):
+                    inst = nl
+                    break
+        
+        if degree:
+            education.append({"degree": degree, "institution": inst, "duration": year})
+
+    return education
+
+    return education
+
+def extract_certifications(text: str) -> List[Dict[str, str]]:
+    """Generic certification extraction handling wrapped lines/URLs."""
+    cert_lines = []
+    lines = text.split('\n')
+    
+    for line in lines:
+        line = line.strip()
+        if not line: continue
+        
+        # Is this a new cert bullet or continuation?
+        is_bullet = any(line.startswith(b) for b in ["•", "-", "*"])
+        if is_bullet:
+            cert_lines.append(line.lstrip("•- *").strip())
+        elif line.lower().startswith("http"):
+            # Append to last
+            if cert_lines:
+                cert_lines[-1] += " " + line
+            else:
+                 cert_lines.append(line)
+        else:
+             # Continuation?
+             if cert_lines:
+                 cert_lines[-1] += " " + line
+             else:
+                 cert_lines.append(line)
+                 
+    # Post-process into structured data
+    certs = []
+    for raw in cert_lines:
+        # Try extract URL
+        url = "N/A"
+        url_match = re.search(r'https?://[^\s,]+', raw)
+        title = raw
+        issuer = "N/A"
+        
+        if url_match:
+            url = url_match.group(0)
+            title = raw.replace(url, "").strip(" -–,")
+            
+        # Try split title/issuer
+        # Saju style: Title - Issuer
+        if '-' in title or '–' in title:
+             parts = re.split(r'[–-]', title, maxsplit=1)
+             if len(parts) >= 2:
+                 title = parts[0].strip()
+                 issuer = parts[1].strip()
+        
+        certs.append({"title": title, "issuer": issuer, "url": url})
+        
+    return certs
+
+def generate_docx(data: Dict[str, Any], template_path: str, output_path: str):
+    """Builds a premium, modern standard CV with invisible table layouts."""
+    try:
+        from docx.shared import Pt, RGBColor
+        from docx.enum.text import WD_ALIGN_PARAGRAPH
+        
+        doc = Document()
+        
+        # Header Section: Name & Contact
+        name = data.get("full_name", "Applicant")
+        header = doc.add_paragraph()
+        header.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        run = header.add_run(name.upper())
+        run.bold = True
+        run.font.size = Pt(22)
+        run.font.color.rgb = RGBColor(41, 128, 185) # Modern Blue
+        
+        contact_line = []
+        if data.get("email") and data.get("email") != "N/A": contact_line.append(data["email"])
+        if data.get("phone") and data.get("phone") != "N/A": contact_line.append(data["phone"])
+        if data.get("linkedin") and data.get("linkedin") != "N/A": contact_line.append(data["linkedin"])
+        
+        contact_p = doc.add_paragraph(" | ".join(contact_line))
+        contact_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        contact_p.paragraph_format.space_after = Pt(20)
+
+        # 1. Summary Section
+        if data.get("summary"):
+            doc.add_heading('PROFESSIONAL SUMMARY', level=1)
+            doc.add_paragraph(data["summary"])
+        
+        # 2. Skills Section
+        if data.get("skills"):
+            doc.add_heading('TECHNICAL SKILLS', level=1)
+            skills_str = ", ".join(data.get("skills", []))
+            doc.add_paragraph(skills_str)
+        
+        # 3. Experience Section - Invisible Table
+        doc.add_heading('PROFESSIONAL EXPERIENCE', level=1)
+        for job in data.get("work_experience", []):
+            exp_table = doc.add_table(rows=1, cols=2)
+            exp_table.autofit = True
+            
+            # Left Column: Role & Company
+            role_cell = exp_table.rows[0].cells[0]
+            r_para = role_cell.paragraphs[0]
+            r_run = r_para.add_run(f"{job.get('role', 'Role')}\n")
+            r_run.bold = True
+            r_para.add_run(job.get('company', 'Company'))
+            
+            # Right Column: Dates & Location
+            date_cell = exp_table.rows[0].cells[1]
+            date_cell.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.RIGHT
+            date_cell.text = f"{job.get('duration', 'N/A')}\n{job.get('location', '')}"
+            
+            # Responsibilities as bullets
+            resps = job.get("responsibilities", "") or job.get("resps", "")
+            if resps:
+                # Basic cleaning of the text before splitting
+                clean_resps = resps.replace("[FILL HERE]", "").strip()
+                for sentence in re.split(r'(?<=[\.\!\?])\s+', clean_resps):
+                    if len(sentence.strip()) > 10:
+                        p = doc.add_paragraph(style='List Bullet')
+                        p.text = sentence.strip()
+                        p.paragraph_format.space_after = Pt(2)
+            
+            doc.add_paragraph() # Spacer
+
+        # 4. Projects Section
+        if data.get("projects"):
+            doc.add_heading('PROJECT PORTFOLIO', level=1)
+            for item in data.get("projects", []):
+                p_head = doc.add_paragraph()
+                p_run = p_head.add_run(f"{item.get('title', 'Project')} | {item.get('tech', 'N/A')}")
+                p_run.bold = True
+                
+                # Role and Details
+                if item.get("role") and item.get("role") != "N/A":
+                    doc.add_paragraph(f"Role: {item['role']}")
+                
+                details = item.get("details", "")
+                if details:
+                    # Clean the details up
+                    clean_details = details.replace("[FILL HERE]", "").strip()
+                    for sentence in re.split(r'(?<=[\.\!\?])\s+', clean_details):
+                        if len(sentence.strip()) > 10:
+                            p = doc.add_paragraph(style='List Bullet')
+                            p.text = sentence.strip()
+                            p.paragraph_format.space_after = Pt(2)
+                doc.add_paragraph()
+            
+        # 5. Education Section
+        if data.get("education"):
+            doc.add_heading('EDUCATION', level=1)
+            for edu in data.get("education", []):
+                p = doc.add_paragraph()
+                e_run = p.add_run(f"{edu.get('degree', 'Degree')} ")
+                e_run.bold = True
+                p.add_run(f"- {edu.get('institution', 'N/A')} ({edu.get('duration', 'N/A')})")
+        
+        # Clean up borders for all tables (Invisible Table Theme)
+        for table in doc.tables:
+            table.style = 'Normal Table'
+            
+        # Versioning/Success Stamp in Footer
+        section = doc.sections[0]
+        footer = section.footer
+        p = footer.paragraphs[0]
+        p.text = "Engineered by CV Reformatter v1.1 | Final Processed Layout"
+        p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        
+        doc.save(output_path)
+        logger.info(f"Generated Premium Standard CV at {output_path}")
+    except Exception as e:
+        logger.error(f"Premium DOCX Generation Error: {e}")
+        raise
+
+@app.get("/templates/list", response_model=List[str])
+def api_list_templates():
+    """List all registered templates."""
+    try:
+        return list_templates()
+    except Exception as e:
+        logger.error(f"Template list error: {e}")
+        return []
+
+from template_engine.template_cleaner import clean_template_content
+
+@app.post("/templates/upload")
+async def upload_template_endpoint(file: UploadFile = File(...), template_name: str = "New Template"):
+    """Upload a DOCX template, extract schema, CLEAN it, and register."""
+    try:
+        content = await file.read()
+        temp_path = os.path.join(TEMPLATES_DIR, file.filename)
+        
+        # 1. Save Original Temporarily
+        with open(temp_path, "wb") as f:
+            f.write(content)
+            
+        # 2. Open Document Instance ONCE (to keep object IDs consistent)
+        doc = Document(temp_path)
+        
+        # 3. Extract Schema
+        schema = extract_template_schema(temp_path, template_name, doc=doc)
+        
+        # 4. Clean Template (REMOVE DUPLICATES)
+        doc = clean_template_content(doc, schema)
+        doc.save(temp_path)
+        
+        # 5. Register
+        register_template(temp_path, template_name)
+        
+        return {"status": "success", "template_name": template_name, "sections_found": len(schema.sections), "schema": schema.dict()}
+    except Exception as e:
+        logger.error(f"Template upload error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/process-to-template")
+async def process_cv_to_template(file: UploadFile = File(...), template_name: str = "default"):
+    """Extract CV data and fill ONLY the selected template."""
+    job_id = str(uuid.uuid4())
+    try:
+        # 1. Extract CV Data (Reuse Phase 1 Logic)
+        content = await file.read()
+        text = preprocess_image(content, file.filename)
+        
+        # 0. Personal Info Extraction (New)
+        personal = extract_name_and_contact(content, file.filename)
+        
+        # 1. Segmented Extraction
+        segs = get_cv_segments(text)
+        
+        extracted = {
+            "full_name": personal["name"],
+            "email": personal["email"],
+            "phone": personal["phone"],
+            "linkedin": personal["linkedin"],
+            "summary": extract_summary(segs["summary"]),
+            "skills": extract_skills(segs["skills"]),
+            "work_experience": extract_work_experience(segs["experience"]),
+            "projects": extract_projects(segs["projects"]),
+            "education": extract_education(segs["education"]),
+            "certifications": extract_certifications(segs["certifications"])
+        }
+        
+        # 2. Load Template
+        if template_name == "default":
+             # Fallback to hardcoded Phase 1 generation if default? 
+             # No, let's use the new system if possible, or just call generate_docx
+             pass
+        
+        schema = get_template_schema(template_name)
+        if not schema:
+            raise HTTPException(status_code=404, detail="Template not found")
+            
+        # 3. Fill Template
+        output_filename = f"{job_id}_{template_name}.docx"
+        output_path = os.path.join(OUTPUT_DIR, output_filename)
+        
+        fill_template(schema, extracted, output_path)
+        
+        return FileResponse(output_path, filename=output_filename)
+
+    except Exception as e:
+        logger.exception(f"Template process error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/process", response_model=ProcessResponse)
+async def process_cv(file: UploadFile = File(...)):
+    """Phase 1: Refined Standard Processing using Anchored Segments."""
+    job_id = str(uuid.uuid4())
+    try:
+        content = await file.read()
+        text = preprocess_image(content, file.filename)
+        
+        # 1. High-Fidelity Contact Extraction
+        personal = extract_name_and_contact(content, file.filename)
+        fullname = personal.get("name", "Applicant")
+        
+        # 2. Anchored Segmentation
+        segs = get_cv_segments(text)
+        
+        # 3. Targeted Data Extraction
+        work_exp = extract_work_experience(segs.get("experience", ""))
+        
+        # Collect company names to filter projects
+        companies = [job.get("company", "") for job in work_exp if job.get("company")]
+        
+        extracted = {
+            "full_name": fullname,
+            "email": personal.get("email", "N/A"),
+            "phone": personal.get("phone", "N/A"),
+            "linkedin": personal.get("linkedin", "N/A"),
+            "summary": extract_summary(segs.get("summary", "")),
+            "skills": extract_skills(segs.get("skills", ""), fullname),
+            "work_experience": work_exp,
+            "projects": extract_projects(segs.get("projects", ""), companies),
+            "education": extract_education(segs.get("education", "")),
+            "certifications": extract_certifications(segs.get("certifications", ""))
+        }
+
+        # Debug Dump
+        debug_path = os.path.join("debug", f"{job_id}_extracted_p1.json")
+        with open(debug_path, "w", encoding="utf-8") as f:
+            json.dump(extracted, f, indent=4, ensure_ascii=False)
+            
+        logger.info(f"P1 JOB {job_id}: Extracted Data for {extracted['full_name']}")
+            
+        # 4. Generate Premium Standard DOCX
+        output_file = os.path.join(OUTPUT_DIR, f"{job_id}.docx")
+        generate_docx(extracted, None, output_file)
+            
+        return ProcessResponse(
+            job_id=job_id,
+            status="success",
+            confidence_score=0.98,
+            extracted_data=extracted,
+            docx_url=f"/output/{job_id}.docx"
+        )
+    except Exception as e:
+        logger.exception(f"Process error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+@app.post("/process-to-template-p3")
+async def process_cv_to_template_p3(file: UploadFile = File(...), template_name: str = "default"):
+    """Phase 3: Exact replica of Phase 2 logic."""
+    job_id = str(uuid.uuid4())
+    try:
+        # 1. Extract CV Data (Reuse Phase 1 Logic)
+        content = await file.read()
+        text = preprocess_image(content, file.filename)
+        
+        # 0. Personal Info Extraction (New)
+        personal = extract_name_and_contact(content, file.filename)
+        
+        # 1. Segmented Extraction
+        segs = get_cv_segments(text)
+        
+        extracted = {
+            "full_name": personal["name"],
+            "email": personal["email"],
+            "phone": personal["phone"],
+            "linkedin": personal["linkedin"],
+            "summary": extract_summary(segs["summary"]),
+            "skills": extract_skills(segs["skills"]),
+            "work_experience": extract_work_experience(segs["experience"]),
+            "projects": extract_projects(segs["projects"]),
+            "education": extract_education(segs["education"]),
+            "certifications": extract_certifications(segs["certifications"])
+        }
+        
+        # 2. Load Template
+        schema = get_template_schema(template_name)
+        if not schema:
+            raise HTTPException(status_code=404, detail="Template not found")
+            
+        # 3. Fill Template
+        output_filename = f"{job_id}_{template_name}_p3.docx"
+        output_path = os.path.join(OUTPUT_DIR, output_filename)
+        
+        fill_template(schema, extracted, output_path)
+        
+        return FileResponse(output_path, filename=output_filename)
+
+    except Exception as e:
+        logger.exception(f"Phase 3 process error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+        
+
+        
+
+
+
+
+@app.get("/status")
+async def get_status():
+    p = len([f for f in os.listdir(INPUT_DIR) if f.endswith(".json")])
+    f = len([f for f in os.listdir(OUTPUT_DIR) if f.endswith(".docx")])
+    return {"pending": p, "formatted": f}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

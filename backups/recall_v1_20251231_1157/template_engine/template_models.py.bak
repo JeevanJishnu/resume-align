@@ -1,0 +1,30 @@
+from enum import Enum
+from typing import List, Optional, Any, Dict
+from pydantic import BaseModel
+
+class SectionType(str, Enum):
+    SUMMARY = "summary"
+    SKILLS = "skills"
+    WORK_EXPERIENCE = "experience"
+    PROJECTS = "projects"
+    EDUCATION = "education"
+    CERTIFICATIONS = "certifications"
+    FULL_NAME = "full_name"
+    CONTACT_INFO = "contact_info"
+    UNKNOWN = "unknown"
+
+class TemplateSection(BaseModel):
+    section_index: int  # Order in document
+    section_type: SectionType
+    confidence: float = 0.0
+    start_paragraph_idx: Optional[int] = None
+    table_idx: Optional[int] = None # If section is table-based
+    header_text: str
+    raw_heading: str = "" # Original text found
+    header_xml_id: Optional[int] = None # id(header_paragraph._element) - STABLE
+    header_element_type: Optional[str] = None # 'para' or 'table_cell'
+
+class TemplateSchema(BaseModel):
+    template_name: str
+    template_file: str
+    sections: List[TemplateSection]

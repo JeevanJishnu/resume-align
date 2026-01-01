@@ -1,0 +1,785 @@
+[
+  {
+    "template_name": "My_Template1",
+    "template_file": "templates\\AM0275 Vishnuraj K J.docx",
+    "sections": [
+      {
+        "section_index": 0,
+        "section_type": "full_name",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "[fill Name here]",
+        "raw_heading": "[fill Name here]",
+        "header_xml_id": 1840808453744,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 1,
+        "section_type": "summary",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Profile Summary",
+        "raw_heading": "Profile Summary",
+        "header_xml_id": 1840799409056,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 2,
+        "section_type": "experience",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Work Experience",
+        "raw_heading": "Work Experience",
+        "header_xml_id": 1840799401056,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 3,
+        "section_type": "education",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Education",
+        "raw_heading": "Education",
+        "header_xml_id": 1840799411456,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 4,
+        "section_type": "projects",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Project Details",
+        "raw_heading": "Project Details",
+        "header_xml_id": 1840799416176,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 5,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Key Skills and Knowledge",
+        "raw_heading": "Key Skills and Knowledge",
+        "header_xml_id": 1840772690112,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 6,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Other Skills",
+        "raw_heading": "Other Skills",
+        "header_xml_id": 1840772678992,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 7,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Tools",
+        "raw_heading": "Tools",
+        "header_xml_id": 1840772692272,
+        "header_element_type": "table_cell"
+      }
+    ]
+  },
+  {
+    "template_name": "My_Template_P3",
+    "template_file": "templates\\AM0275 Vishnuraj K J.docx",
+    "sections": [
+      {
+        "section_index": 0,
+        "section_type": "full_name",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "VISHNURAJ K J",
+        "raw_heading": "VISHNURAJ K J",
+        "header_xml_id": 2338684319968,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 1,
+        "section_type": "summary",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Profile Summary",
+        "raw_heading": "Profile Summary",
+        "header_xml_id": 2338657642016,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 2,
+        "section_type": "experience",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Work Experience",
+        "raw_heading": "Work Experience",
+        "header_xml_id": 2338657643936,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 3,
+        "section_type": "education",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Education",
+        "raw_heading": "Education",
+        "header_xml_id": 2338657636016,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 4,
+        "section_type": "projects",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Project Details",
+        "raw_heading": "Project Details",
+        "header_xml_id": 2338657641376,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 5,
+        "section_type": "skills",
+        "confidence": 1.3,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Key Skills and Knowledge",
+        "raw_heading": "Key Skills and Knowledge",
+        "header_xml_id": 2338684315408,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 6,
+        "section_type": "skills",
+        "confidence": 1.3,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Other Skills",
+        "raw_heading": "Other Skills",
+        "header_xml_id": 2338684312688,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 7,
+        "section_type": "tools",
+        "confidence": 1.3,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Tools",
+        "raw_heading": "Tools",
+        "header_xml_id": 2338684318368,
+        "header_element_type": "table_cell"
+      }
+    ]
+  },
+  {
+    "template_name": "Corp_Dev",
+    "template_file": "templates/Corp_Dev.docx",
+    "sections": [
+      {
+        "section_index": 0,
+        "section_type": "full_name",
+        "confidence": 1.0,
+        "start_paragraph_idx": 0,
+        "table_idx": null,
+        "header_text": "CORPORATE DEVELOPER TEMPLATE",
+        "raw_heading": "CORPORATE DEVELOPER TEMPLATE",
+        "header_xml_id": 2098012931408,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 1,
+        "section_type": "summary",
+        "confidence": 1.0,
+        "start_paragraph_idx": 1,
+        "table_idx": null,
+        "header_text": "Profile Summary",
+        "raw_heading": "Profile Summary",
+        "header_xml_id": 2098012931328,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 3,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": 3,
+        "table_idx": null,
+        "header_text": "Key Skills and Knowledge",
+        "raw_heading": "Key Skills and Knowledge",
+        "header_xml_id": 2098012931248,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 5,
+        "section_type": "experience",
+        "confidence": 1.0,
+        "start_paragraph_idx": 5,
+        "table_idx": null,
+        "header_text": "Work Experience",
+        "raw_heading": "Work Experience",
+        "header_xml_id": 2098012931728,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 7,
+        "section_type": "education",
+        "confidence": 1.0,
+        "start_paragraph_idx": 7,
+        "table_idx": null,
+        "header_text": "Education",
+        "raw_heading": "Education",
+        "header_xml_id": 2098012945728,
+        "header_element_type": "para"
+      }
+    ]
+  },
+  {
+    "template_name": "Fresher_IT",
+    "template_file": "templates/Fresher_IT.docx",
+    "sections": [
+      {
+        "section_index": 1,
+        "section_type": "summary",
+        "confidence": 1.0,
+        "start_paragraph_idx": 1,
+        "table_idx": null,
+        "header_text": "Summary",
+        "raw_heading": "Summary",
+        "header_xml_id": 2098012931408,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 3,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": 3,
+        "table_idx": null,
+        "header_text": "Technical Skills",
+        "raw_heading": "Technical Skills",
+        "header_xml_id": 2098012934048,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 5,
+        "section_type": "education",
+        "confidence": 1.0,
+        "start_paragraph_idx": 5,
+        "table_idx": null,
+        "header_text": "Education",
+        "raw_heading": "Education",
+        "header_xml_id": 2098012933088,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 7,
+        "section_type": "projects",
+        "confidence": 1.0,
+        "start_paragraph_idx": 7,
+        "table_idx": null,
+        "header_text": "Projects",
+        "raw_heading": "Projects",
+        "header_xml_id": 2098012946048,
+        "header_element_type": "para"
+      }
+    ]
+  },
+  {
+    "template_name": "Architect",
+    "template_file": "templates/Architect.docx",
+    "sections": [
+      {
+        "section_index": 1,
+        "section_type": "summary",
+        "confidence": 1.0,
+        "start_paragraph_idx": 1,
+        "table_idx": null,
+        "header_text": "Professional Summary",
+        "raw_heading": "Professional Summary",
+        "header_xml_id": 2098012936848,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 3,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": 3,
+        "table_idx": null,
+        "header_text": "Core Expertise",
+        "raw_heading": "Core Expertise",
+        "header_xml_id": 2098012936288,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 5,
+        "section_type": "projects",
+        "confidence": 1.0,
+        "start_paragraph_idx": 5,
+        "table_idx": null,
+        "header_text": "Transformation Projects",
+        "raw_heading": "Transformation Projects",
+        "header_xml_id": 2098012935568,
+        "header_element_type": "para"
+      }
+    ]
+  },
+  {
+    "template_name": "Service_Company",
+    "template_file": "templates/Service_Company.docx",
+    "sections": [
+      {
+        "section_index": 1,
+        "section_type": "summary",
+        "confidence": 1.0,
+        "start_paragraph_idx": 1,
+        "table_idx": null,
+        "header_text": "Summary",
+        "raw_heading": "Summary",
+        "header_xml_id": 2098012939088,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 3,
+        "section_type": "skills",
+        "confidence": 0.83,
+        "start_paragraph_idx": 3,
+        "table_idx": null,
+        "header_text": "Technical Competencies",
+        "raw_heading": "Technical Competencies",
+        "header_xml_id": 2098012938768,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 5,
+        "section_type": "experience",
+        "confidence": 0.74,
+        "start_paragraph_idx": 5,
+        "table_idx": null,
+        "header_text": "Assignment History",
+        "raw_heading": "Assignment History",
+        "header_xml_id": 2098012936768,
+        "header_element_type": "para"
+      },
+      {
+        "section_index": 6,
+        "section_type": "experience",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Experience & Roles",
+        "raw_heading": "Experience & Roles",
+        "header_xml_id": 2098012940848,
+        "header_element_type": "table_cell"
+      }
+    ]
+  },
+  {
+    "template_name": "Pradeep_Verify",
+    "template_file": "templates\\AM0275 Vishnuraj K J_Cleaned_Final.docx",
+    "sections": [
+      {
+        "section_index": 0,
+        "section_type": "full_name",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "[fill Name here]",
+        "raw_heading": "[fill Name here]",
+        "header_xml_id": 2776734896352,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 3,
+        "section_type": "summary",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Profile Summary",
+        "raw_heading": "Profile Summary",
+        "header_xml_id": 2776734895872,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 12,
+        "section_type": "experience",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Work Experience",
+        "raw_heading": "Work Experience",
+        "header_xml_id": 2776734905952,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 34,
+        "section_type": "education",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Education",
+        "raw_heading": "Education",
+        "header_xml_id": 2776734903312,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 39,
+        "section_type": "projects",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Project Details",
+        "raw_heading": "Project Details",
+        "header_xml_id": 2776734902512,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 171,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Key Skills and Knowledge",
+        "raw_heading": "Key Skills and Knowledge",
+        "header_xml_id": 2776739531984,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 173,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 0,
+        "header_text": "Other Skills",
+        "raw_heading": "Other Skills",
+        "header_xml_id": 2776739532064,
+        "header_element_type": "table_cell"
+      }
+    ]
+  },
+  {
+    "template_name": "AM0275",
+    "template_file": "templates\\AM0275 Vishnuraj K J.docx",
+    "sections": [
+      {
+        "section_index": 5,
+        "section_type": "summary",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 2661759879792,
+        "header_text": "Profile Summary",
+        "raw_heading": "Profile Summary",
+        "header_xml_id": 2661760008432,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 14,
+        "section_type": "experience",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 2661759879792,
+        "header_text": "Work Experience",
+        "raw_heading": "Work Experience",
+        "header_xml_id": 2661760022032,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 36,
+        "section_type": "education",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 2661759879792,
+        "header_text": "Education",
+        "raw_heading": "Education",
+        "header_xml_id": 2661760023792,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 41,
+        "section_type": "projects",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 2661759879792,
+        "header_text": "Project Details",
+        "raw_heading": "Project Details",
+        "header_xml_id": 2661760024192,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 173,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 2661759879792,
+        "header_text": "Key Skills and Knowledge",
+        "raw_heading": "Key Skills and Knowledge",
+        "header_xml_id": 2661760035776,
+        "header_element_type": "table_cell"
+      },
+      {
+        "section_index": 175,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": 2661759879792,
+        "header_text": "Other Skills",
+        "raw_heading": "Other Skills",
+        "header_xml_id": 2661760035296,
+        "header_element_type": "table_cell"
+      }
+    ]
+  },
+  {
+    "template_name": "My_Template",
+    "template_file": "templates\\Pradeep_Kumar_P_C_Snowflake_Dev_10yr_exp_OB_Format 1.docx",
+    "sections": [
+      {
+        "section_index": 11,
+        "section_type": "summary",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Summary",
+        "raw_heading": "Summary",
+        "header_xml_id": 2635130192592,
+        "header_element_type": "para",
+        "is_record_header": false
+      },
+      {
+        "section_index": 19,
+        "section_type": "education",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Education",
+        "raw_heading": "Education",
+        "header_xml_id": 2635130198752,
+        "header_element_type": "para",
+        "is_record_header": false
+      },
+      {
+        "section_index": 22,
+        "section_type": "certifications",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Certification Status (Addressing Requirement)",
+        "raw_heading": "Certification Status (Addressing Requirement)",
+        "header_xml_id": 2635130202672,
+        "header_element_type": "para",
+        "is_record_header": false
+      },
+      {
+        "section_index": 26,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Technical Skills",
+        "raw_heading": "Technical Skills",
+        "header_xml_id": 2635130204352,
+        "header_element_type": "para",
+        "is_record_header": false
+      },
+      {
+        "section_index": 49,
+        "section_type": "projects",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Project Profile",
+        "raw_heading": "Project Profile",
+        "header_xml_id": 2635130207712,
+        "header_element_type": "para",
+        "is_record_header": false
+      },
+      {
+        "section_index": 51,
+        "section_type": "projects",
+        "confidence": 0.98,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Project #1:",
+        "raw_heading": "Project #1:",
+        "header_xml_id": 2635130201632,
+        "header_element_type": "para",
+        "is_record_header": true
+      },
+      {
+        "section_index": 69,
+        "section_type": "projects",
+        "confidence": 0.98,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Project #2:",
+        "raw_heading": "Project #2:",
+        "header_xml_id": 2635130205552,
+        "header_element_type": "para",
+        "is_record_header": true
+      },
+      {
+        "section_index": 91,
+        "section_type": "projects",
+        "confidence": 0.98,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Project #3:",
+        "raw_heading": "Project #3:",
+        "header_xml_id": 2635130069600,
+        "header_element_type": "para",
+        "is_record_header": true
+      },
+      {
+        "section_index": 107,
+        "section_type": "projects",
+        "confidence": 0.98,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Project #4:",
+        "raw_heading": "Project #4:",
+        "header_xml_id": 2635130072080,
+        "header_element_type": "para",
+        "is_record_header": true
+      },
+      {
+        "section_index": 123,
+        "section_type": "projects",
+        "confidence": 0.98,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Project #5:",
+        "raw_heading": "Project #5:",
+        "header_xml_id": 2635130068320,
+        "header_element_type": "para",
+        "is_record_header": true
+      },
+      {
+        "section_index": 140,
+        "section_type": "projects",
+        "confidence": 0.98,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Project #6:",
+        "raw_heading": "Project #6:",
+        "header_xml_id": 2635130198912,
+        "header_element_type": "para",
+        "is_record_header": true
+      },
+      {
+        "section_index": 156,
+        "section_type": "projects",
+        "confidence": 0.98,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Project #7:",
+        "raw_heading": "Project #7:",
+        "header_xml_id": 2635130198512,
+        "header_element_type": "para",
+        "is_record_header": true
+      },
+      {
+        "section_index": 181,
+        "section_type": "projects",
+        "confidence": 0.98,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "Project #8:",
+        "raw_heading": "Project #8:",
+        "header_xml_id": 2635130062560,
+        "header_element_type": "para",
+        "is_record_header": true
+      }
+    ]
+  },
+  {
+    "template_name": "Extractor_Master",
+    "template_file": "templates\\Extractor_Master.docx",
+    "sections": [
+      {
+        "section_index": 9,
+        "section_type": "summary",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "PROFESSIONAL SUMMARY",
+        "raw_heading": "PROFESSIONAL SUMMARY",
+        "header_xml_id": 2262658061712,
+        "header_element_type": "para",
+        "is_record_header": false
+      },
+      {
+        "section_index": 11,
+        "section_type": "skills",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "TECHNICAL SKILLS",
+        "raw_heading": "TECHNICAL SKILLS",
+        "header_xml_id": 2262658060512,
+        "header_element_type": "para",
+        "is_record_header": false
+      },
+      {
+        "section_index": 17,
+        "section_type": "experience",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "WORK EXPERIENCE",
+        "raw_heading": "WORK EXPERIENCE",
+        "header_xml_id": 2262658070272,
+        "header_element_type": "para",
+        "is_record_header": false
+      },
+      {
+        "section_index": 23,
+        "section_type": "projects",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "PROJECTS",
+        "raw_heading": "PROJECTS",
+        "header_xml_id": 2262667116080,
+        "header_element_type": "para",
+        "is_record_header": false
+      },
+      {
+        "section_index": 34,
+        "section_type": "education",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "EDUCATION",
+        "raw_heading": "EDUCATION",
+        "header_xml_id": 2262667116400,
+        "header_element_type": "para",
+        "is_record_header": false
+      },
+      {
+        "section_index": 36,
+        "section_type": "certifications",
+        "confidence": 1.0,
+        "start_paragraph_idx": null,
+        "table_idx": null,
+        "header_text": "CERTIFICATIONS",
+        "raw_heading": "CERTIFICATIONS",
+        "header_xml_id": 2262658064432,
+        "header_element_type": "para",
+        "is_record_header": false
+      }
+    ]
+  }
+]

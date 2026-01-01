@@ -1,0 +1,601 @@
+{
+    "summary": "Profile Highlights 8+ years of experience in Software Development in the IT industry. Experienced in Core PHP and frameworks such as Laravel and Yii. Skilled in front-end technologies including HTML, CSS, and JavaScript (AJAX). Demonstrated experience in leading and guiding small development teams — overseeing task allocation, code reviews, and ensuring timely project delivery. Strong knowledge of programming logic, debugging techniques, and software development best practices. Possesses hands-on experience across the full Software Development Life Cycle (SDLC) including design, development, review, and integration testing. A proactive team player with excellent interpersonal, communication, and leadership Highly adaptable and quick to learn new technologies and tools, capable of thriving in diverse work environments. Passionate about continuous learning and exploring emerging technologies. Work Experience AlignMinds Technologies, Kochi, India | Software Engineer | Feb 2021 - Present Developed reusable web components using LitElement including email/SMS notification systems, message modals, quiz management interfaces, and document storage (DocuStore) that can be reused across applications. Integrated web components into Angular/React applications and built supporting Node.js APIs for seamless functionality. Optimized existing products through performance tuning and code refactoring, improving system efficiency. Created automation test scripts using Node.js with Mocha and Jest frameworks. Maintained IBM product schema and attribute mappings, ensuring data integrity. Provided technical support for debugging and unit testing across development teams. Developed comprehensive user documentation and technical guides. Aventus Informatics, Koratty, India | Nov 2018 - Feb 2021 |Jr. Software Engineer Worked on Laravel to build the Web Application. Worked on both the Frontend and Backend sides of various applications. Built various features for the client's products. Supported the team with technical debugging and unit testing. Worked on user guides. Tecnonauts Technology Services Pvt Ltd, Kochi, India | Feb 2018 - Oct 2018| Web Developer Participated in analysis, design, and new development of applications. Designed, developed, and tested small, medium, and large-scale software Create website layout/user interface by using standard HTML/CSS practices. Key Skills and Knowledge Laravel 11,10,8.0, 5.2,4.2 Lit (Web component) Microsoft Visual Studio Kibana Postman Git Asana Integrate data from various back-end services and databases. Gather and refine specifications and requirements based on technical needs. Create and maintain software documentation. Be responsible for maintaining, expanding, and scaling our site. ChipsNBytes IT Management Services Pvt Ltd, Kochi, India | Oct 2015 - Dec 2017| Web Application Developer Tested changes to the user interface, application functionality, and database access as required by the client organizations. Project Details WebComponent | Front Development Overview: Experienced in developing reusable and modular web components using LitElement and JavaScript. Built UI elements such as modals, editors, and notification components with cross-framework compatibility, focusing on performance, maintainability, and consistent design across applications. Responsibilities Developed modular, reusable web components for enterprise applications including email/SMS notification systems, message modals, quiz management interfaces, and DocuStore (document management system). Integrated components into Angular/React based applications with Node.js backend Environment: Lit Tools: VS Code, Git Overview: A Learning Management System (LMS) platform that generates detailed reports on user activity, including course completion status (Completed, In Progress, Not Started, Archived) and usage statistics. LMS Application| Full stack Developer Integrated email web component into the Angular-Node based Learning Management System, handling both front-end integration and backend connectivity. and implemented AWS SQS queue with Lambda functions for reliable email notification Environment: Angular 19, NodeJS, LitElement LMS Reports |Backend Developer Resolved bugs within reporting modules to ensure accurate display of course statuses and user statistics. Improved stability and data consistency across report views used by administrators and instructors. Environment: Laravel 5.3, MySQL Tools: VS Code, Git, Postman ETC |Frontend Developer ETC is a global leader in the design and manufacturing of lighting, rigging, and control systems for entertainment and architectural applications. Built features for project data extraction and enabled export/download of project configurations in XML and JSON formats, streamlining project documentation workflow. Integrated REST APIs to fetch, display, and manage real-time project data, ensuring accuracy and seamless interactivity. Environment: React 18 Thoroughbred |Backend Developer Overview: Thoroughbred Analytics specializes in providing advanced data analytics for the thoroughbred horse racing industry. The project focused on integrating new responsive pages into an existing PHP project, leveraging the latest JavaScript technologies. Integrated responsive pages with legacy PHP and modern JavaScript. Refactored core functions to support responsive design and improve UX. Collaborated with frontend team for data consistency and performance. Environment: Core PHP 5.4, MySQL, JavaScript Tools: VS Code, Git, cPanel, Docker Overview: Crunchet is a platform that allows users to create and share meaningful stories by combining personal, web, and social media content. The app allows users to sign up and manage their profiles, and can now support both personal and organizational accounts. Crunchet Mobile App| Backend Developer Ensured smooth integration of the new feature with the app’s backend, enabling users to select from multiple categories during the signup process. Added a new API to the existing app to support the signup process or organizational accounts, in addition to the pre-existing personal category. Improved user experience by streamlining the registration process for both personal and organizational accounts. Crunchet Web Application | Full stack Developer Collaborated on responsive UI design and component-based architecture. Developed and integrated frontend components with dynamic API endpoints. Managed environment configuration, CORS policies, and frontend-backend Environment: React, Node.js, Express Tournament |Full stack Developer Overview: The Tournament System is an admin portal for managing multiple tournaments, including team registration via a payment gateway, bracketing, scheduling, scoring, and Developed a new application from scratch using Laravel 8, incorporating features such as team registration, scoring, and scheduling to streamline tournament management. Environment: Laravel 8, MySQL. Coast Soccer League |Backend Developer Overview: Coast Soccer League is the largest youth soccer gaming circuit in the United The web application serves as the admin portal for the league, managing team registrations, scheduling, standings, and reporting, while supporting both the CSL and Users can utilize the CSL App to manage team details, report game results, and rate referees and other teams. Similarly, the Referee App helps referees manage schedules, keep score, and submit match reports. Added new features to existing web pages as per client requirements, enhancing the platform’s functionality. Developed and maintained the backend logic to support team registration, match reporting, and user management. Prepared detailed documentation at both the program and user levels, ensuring smooth communication and ease of access for future updates. Provided timely bug fixes during critical situations, ensuring minimal downtime for Environment: Yii1, AJAX, JS, XML, CSS, MySQL Xcruit |Web Application Developer Project Overview: Xcruit is an online job portal, which can connect recruiters and job seekers, providing better opportunities, that include both candidate and recruiter management. Enhanced existing dynamic web pages by adding new features and optimizing performance to meet project deadlines. Integrated open-source and third-party applications, maintaining quality assurance and system integrity. Collaborated with the development team to create and debug small coding modules, ensuring proper execution. Troubleshot, tested, and optimized web applications and databases for better performance and reliability. Developed and deployed new features to streamline web application tools and Utilized GitHub for version control and worked with various data types for backend Environment: Laravel, JS, AJAX, Elasticsearch, MySQL, etc. Tools: VS Code, Kibana, GIT, etc. Dreamplore |Web Application Developer Project Overview: Dreamplore is a dynamic website for tours and travels, managed by the admin, offering a range of features to enhance user and admin interaction. Assisted in all phases of the development lifecycle, including requirement gathering, report preparation, and database maintenance. Designed and developed dynamic websites based on client requirements, ensuring accurate data retrieval through PHP scripting. Collaborated with clients to understand feature requests, implementing additional functionality on existing web pages to meet deadlines. improve user experience. Environment: Core PHP, MySQL, etc. Tools: Sublime, cPanel. Web your Campus |Web Application Developer Project Overview: Web Your Campus is a data-driven online platform that engages students, parents, and teachers in managing academic activities and performance. Contributed to the analysis, design, and development of new features for the platform. Designed, developed, and tested software enhancements for various application sizes (small, medium, large). Conducted UI, functionality, and database access testing to meet client requirements. Collaborated with developers to ensure accurate implementation of program and system specifications. Worked with functional users to design alternative system solutions based on feedback. Prepared documentation for both program and user levels, maintaining version control Assisted in reviewing and analyzing program specifications to ensure alignment with work process changes. Environment: Laravel, AJAX, JS, MySQL, etc. Tools: Sublime. Masters of Computer Applications – 2014 Bachelors of Computer Applications –2010 Training and Certifications Undergoing AI and Agentic AI Training for Developers PHP Certification from Spectrum",
+    "skills": [
+        "Vineetha T",
+        "CSS",
+        "and JavaScript (AJAX).",
+        "task allocation",
+        "code reviews",
+        "debugging techniques",
+        "and software",
+        "development best practices.",
+        "development",
+        "review",
+        "and integration testing.",
+        "communication",
+        "and leadership",
+        "skills.",
+        "Work Experience",
+        "Kochi",
+        "India",
+        "Software Engineer",
+        "Feb 2021 - Present",
+        "systems",
+        "message modals",
+        "quiz management interfaces",
+        "and document storage",
+        "improving system efficiency.",
+        "Aventus Informatics",
+        "Koratty",
+        "Jr. Software Engineer",
+        "Worked on user guides.",
+        "design",
+        "and tested small",
+        "medium",
+        "and large-scale software",
+        "enhancements.",
+        "Key Skills and Knowledge",
+        "Laravel 11",
+        "8.0",
+        "5.2",
+        "4.2",
+        "JavaScript",
+        "HTML5",
+        "Core PHP",
+        "jQuery",
+        "JSON",
+        "AJAX",
+        "Elasticsearch",
+        "MySQL",
+        "Yii1",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Other Skills",
+        "Node.js",
+        "Angular.js",
+        "React",
+        "AWS",
+        "Lit (Web component)",
+        "Express",
+        "Python",
+        "Flask",
+        "Tools",
+        "Microsoft Visual Studio",
+        "Code",
+        "Kibana Postman Git Asana",
+        "application functionality",
+        "and database access as",
+        "Project Details",
+        "WebComponent",
+        "Front Development",
+        "editors",
+        "and notification",
+        "focusing on performance",
+        "maintainability",
+        "email/SMS notification systems",
+        "and",
+        "APIs.",
+        "Tools: VS Code",
+        "Git",
+        "LMS",
+        "on user activity",
+        "In Progress",
+        "Not Started",
+        "LMS Application",
+        "System",
+        "Node.js APIs",
+        "processing.",
+        "NodeJS",
+        "LitElement",
+        "LMS Reports",
+        "and user statistics.",
+        "and instructors.",
+        "Postman",
+        "ETC",
+        "rigging",
+        "and control",
+        "display",
+        "Thoroughbred",
+        "cPanel",
+        "Docker",
+        "Crunchet",
+        "combining personal",
+        "web",
+        "manage their profiles",
+        "Crunchet Mobile App",
+        "enabling users to",
+        "accounts",
+        "organizational accounts.",
+        "Crunchet Web Application",
+        "CORS policies",
+        "and frontend-backend",
+        "communication.",
+        "Tournament",
+        "bracketing",
+        "scheduling",
+        "scoring",
+        "standings.",
+        "incorporating features such as",
+        "team registration",
+        "MySQL.",
+        "Postman.",
+        "Coast Soccer League",
+        "managing team",
+        "registrations",
+        "standings",
+        "and reporting",
+        "referee apps.",
+        "report game results",
+        "and rate",
+        "keep score",
+        "and submit match reports.",
+        "enhancing the",
+        "platform’s functionality.",
+        "match",
+        "reporting",
+        "and user management.",
+        "users.",
+        "XML",
+        "Xcruit",
+        "providing better opportunities",
+        "system integrity.",
+        "Troubleshot",
+        "tested",
+        "performance and reliability.",
+        "procedures.",
+        "management.",
+        "etc.",
+        "Kibana",
+        "Dreamplore",
+        "admin",
+        "report preparation",
+        "and database maintenance.",
+        "implementing additional",
+        "improve user experience.",
+        "Tools: Sublime",
+        "cPanel.",
+        "Web your Campus",
+        "parents",
+        "(small",
+        "large).",
+        "Conducted UI",
+        "functionality",
+        "specifications.",
+        "for updates.",
+        "process changes.",
+        "Tools: Sublime.",
+        "Education",
+        "Training and Certifications"
+    ],
+    "work_experience": [
+        {
+            "company": "AlignMinds Technologies, Kochi, India",
+            "role": "Software Engineer",
+            "duration": "Feb 2021",
+            "location": "N/A",
+            "responsibilities": "Developed reusable web components using LitElement including email/SMS notification systems, message modals, quiz management interfaces, and document storage (DocuStore) that can be reused across applications. Integrated web components into Angular/React applications and built supporting Node.js APIs for seamless functionality. Optimized existing products through performance tuning and code refactoring, improving system efficiency. Created automation test scripts using Node.js with Mocha and Jest frameworks. Maintained IBM product schema and attribute mappings, ensuring data integrity. Provided technical support for debugging and unit testing across development teams. Developed comprehensive user documentation and technical guides."
+        },
+        {
+            "company": "Aventus Informatics, Koratty, India",
+            "role": "▪",
+            "duration": "Nov 2018 - Feb 2021 |Jr. Software Engineer",
+            "location": "N/A",
+            "responsibilities": "Worked on Laravel to build the Web Application. Worked on both the Frontend and Backend sides of various applications. Built various features for the client's products. Supported the team with technical debugging and unit testing. Worked on user guides."
+        },
+        {
+            "company": "Tecnonauts Technology Services Pvt Ltd, Kochi, India",
+            "role": "▪",
+            "duration": "Feb 2018 - Oct 2018| Web Developer",
+            "location": "N/A",
+            "responsibilities": "Participated in analysis, design, and new development of applications. Designed, developed, and tested small, medium, and large-scale software Create website layout/user interface by using standard HTML/CSS practices. Key Skills and Knowledge Laravel 11,10,8.0, 5.2,4.2"
+        },
+        {
+            "company": "ChipsNBytes IT Management Services Pvt Ltd, Kochi, India",
+            "role": "Web Application Developer",
+            "duration": "Oct 2015 - Dec 2017|",
+            "location": "N/A",
+            "responsibilities": "Participated in analysis, design, and new development of applications. Designed, developed, and tested small, medium, and large-scale software Tested changes to the user interface, application functionality, and database access as required by the client organizations."
+        },
+        {
+            "company": "Masters of Computer Applications",
+            "role": "N/A",
+            "duration": "2014",
+            "location": "N/A",
+            "responsibilities": ""
+        },
+        {
+            "company": "Bachelors of Computer Applications –2010",
+            "role": "N/A",
+            "duration": "N/A",
+            "location": "N/A",
+            "responsibilities": "Training and Certifications Undergoing AI and Agentic AI Training for Developers PHP Certification from Spectrum"
+        }
+    ],
+    "projects": [
+        {
+            "title": "AlignMinds Technologies, Kochi, India",
+            "tech": "N/A",
+            "duration": "N/A",
+            "role": "Role: Software Engineer. Developed reusable web components using LitElement including email/SMS notification systems, message modals, quiz management interfaces, and document storage (DocuStore) that can be reused across applications. Integrated web components into Angular/React applications and built supporting Node.js APIs for seamless functionality. Optimized existing products through performance tuning and code refactoring, improving system efficiency. Created automation test scripts using Node.js with Mocha and Jest frameworks. Maintained IBM product schema and attribute mappings, ensuring data integrity. Provided technical support for debugging and unit testing across development teams. Developed comprehensive user documentation and technical guides."
+        },
+        {
+            "title": "Aventus Informatics, Koratty, India",
+            "tech": "N/A",
+            "duration": "N/A",
+            "role": "Role: Nov 2018 - Feb 2021. Worked on Laravel to build the Web Application. Worked on both the Frontend and Backend sides of various applications. Built various features for the client's products. Supported the team with technical debugging and unit testing. Worked on user guides."
+        },
+        {
+            "title": "Tecnonauts Technology Services Pvt Ltd, Kochi, India",
+            "tech": "N/A",
+            "duration": "N/A",
+            "role": "Role: Feb 2018 - Oct 2018. Participated in analysis, design, and new development of applications. Designed, developed, and tested small, medium, and large-scale software enhancements. Create website layout/user interface by using standard HTML/CSS practices. Key Skills and Knowledge Laravel 11,10,8.0, 5.2,4.2 JavaScript HTML5 Core PHP CSS jQuery JSON AJAX Elasticsearch MySQL C Yii1 Tailwind CSS PostgreSQL"
+        },
+        {
+            "title": "ChipsNBytes IT Management Services Pvt Ltd, Kochi, India",
+            "tech": "N/A",
+            "duration": "N/A",
+            "role": "Role: Oct 2015 - Dec 2017. Web Application Developer Participated in analysis, design, and new development of applications. Designed, developed, and tested small, medium, and large-scale software enhancements. Tested changes to the user interface, application functionality, and database access as required by the client organizations. Project Details"
+        },
+        {
+            "title": "WebComponent",
+            "tech": "Lit, VS Code, Git",
+            "duration": "N/A",
+            "role": "Role: Front Development. Overview: Experienced in developing reusable and modular web components using LitElement and JavaScript. Built UI elements such as modals, editors, and notification components with cross-framework compatibility, focusing on performance, maintainability, and consistent design across applications. Responsibilities Developed modular, reusable web components for enterprise applications including email/SMS notification systems, message modals, quiz management interfaces, and DocuStore (document management system). Integrated components into Angular/React based applications with Node.js backend APIs. LMS Overview: A Learning Management System (LMS) platform that generates detailed reports on user activity, including course completion status (Completed, In Progress, Not Started, Archived) and usage statistics."
+        },
+        {
+            "title": "LMS Application",
+            "tech": "Angular 19, NodeJS, LitElement, VS Code, Git",
+            "duration": "N/A",
+            "role": "Role: Full stack Developer. Integrated email web component into the Angular-Node based Learning Management System, handling both front-end integration and backend connectivity. Developed Node.js APIs and implemented AWS SQS queue with Lambda functions for reliable email notification processing."
+        },
+        {
+            "title": "LMS Reports",
+            "tech": "Laravel 5.3, MySQL, VS Code, Git, Postman",
+            "duration": "N/A",
+            "role": "Role: Backend Developer. Resolved bugs within reporting modules to ensure accurate display of course statuses and user statistics. Improved stability and data consistency across report views used by administrators and instructors."
+        },
+        {
+            "title": "ETC",
+            "tech": "React 18, VS Code, Git, Postman",
+            "duration": "N/A",
+            "role": "Role: Frontend Developer. ETC is a global leader in the design and manufacturing of lighting, rigging, and control systems for entertainment and architectural applications. Built features for project data extraction and enabled export/download of project configurations in XML and JSON formats, streamlining project documentation workflow. Integrated REST APIs to fetch, display, and manage real-time project data, ensuring accuracy and seamless interactivity."
+        },
+        {
+            "title": "Thoroughbred",
+            "tech": "Core PHP 5.4, MySQL, JavaScript, VS Code, Git, cPanel, Docker",
+            "duration": "N/A",
+            "role": "Role: Backend Developer. Overview: Thoroughbred Analytics specializes in providing advanced data analytics for the thoroughbred horse racing industry. The project focused on integrating new responsive pages into an existing PHP project, leveraging the latest JavaScript technologies. Integrated responsive pages with legacy PHP and modern JavaScript. Refactored core functions to support responsive design and improve UX. Collaborated with frontend team for data consistency and performance. Crunchet Overview: Crunchet is a platform that allows users to create and share meaningful stories by combining personal, web, and social media content. The app allows users to sign up and manage their profiles, and can now support both personal and organizational accounts."
+        },
+        {
+            "title": "Crunchet Mobile App",
+            "tech": "Laravel 5.3, MySQL, VS Code, Git, Postman",
+            "duration": "N/A",
+            "role": "Role: Backend Developer. Ensured smooth integration of the new feature with the app’s backend, enabling users to select from multiple categories during the signup process. Added a new API to the existing app to support the signup process or organizational accounts, in addition to the pre-existing personal category. Improved user experience by streamlining the registration process for both personal and organizational accounts."
+        },
+        {
+            "title": "Crunchet Web Application",
+            "tech": "React, Node.js, Express, VS Code, Git, Postman",
+            "duration": "N/A",
+            "role": "Role: Full stack Developer. Collaborated on responsive UI design and component-based architecture. Developed and integrated frontend components with dynamic API endpoints. Managed environment configuration, CORS policies, and frontend-backend communication."
+        },
+        {
+            "title": "Tournament",
+            "tech": "Laravel 8, MySQL., VS Code, Git, Postman.",
+            "duration": "N/A",
+            "role": "Role: Full stack Developer. Overview: The Tournament System is an admin portal for managing multiple tournaments, including team registration via a payment gateway, bracketing, scheduling, scoring, and standings. Developed a new application from scratch using Laravel 8, incorporating features such as team registration, scoring, and scheduling to streamline tournament management."
+        },
+        {
+            "title": "Coast Soccer League",
+            "tech": "Yii1, AJAX, JS, XML, CSS, MySQL, VS Code, Git, Postman",
+            "duration": "N/A",
+            "role": "Role: Backend Developer. Overview: Coast Soccer League is the largest youth soccer gaming circuit in the United States. The web application serves as the admin portal for the league, managing team registrations, scheduling, standings, and reporting, while supporting both the CSL and referee apps. Users can utilize the CSL App to manage team details, report game results, and rate referees and other teams. Similarly, the Referee App helps referees manage schedules, keep score, and submit match reports. Added new features to existing web pages as per client requirements, enhancing the platform’s functionality. Developed and maintained the backend logic to support team registration, match reporting, and user management. Prepared detailed documentation at both the program and user levels, ensuring smooth communication and ease of access for future updates. Provided timely bug fixes during critical situations, ensuring minimal downtime for users."
+        },
+        {
+            "title": "Xcruit",
+            "tech": "Laravel, JS, AJAX, Elasticsearch, MySQL, etc., VS Code, Kibana, GIT, etc.",
+            "duration": "N/A",
+            "role": "Role: Web Application Developer. Xcruit is an online job portal, which can connect recruiters and job seekers, providing better opportunities, that include both candidate and recruiter management. Enhanced existing dynamic web pages by adding new features and optimizing performance to meet project deadlines. Integrated open-source and third-party applications, maintaining quality assurance and system integrity. Collaborated with the development team to create and debug small coding modules, ensuring proper execution. Troubleshot, tested, and optimized web applications and databases for better performance and reliability. Developed and deployed new features to streamline web application tools and procedures. Utilized GitHub for version control and worked with various data types for backend management."
+        },
+        {
+            "title": "Dreamplore",
+            "tech": "Core PHP, MySQL, etc., Sublime, cPanel.",
+            "duration": "N/A",
+            "role": "Role: Web Application Developer. Dreamplore is a dynamic website for tours and travels, managed by the admin, offering a range of features to enhance user and admin interaction. Assisted in all phases of the development lifecycle, including requirement gathering, report preparation, and database maintenance. Designed and developed dynamic websites based on client requirements, ensuring accurate data retrieval through PHP scripting. Collaborated with clients to understand feature requests, implementing additional functionality on existing web pages to meet deadlines. Developed and deployed new features to streamline web application processes and improve user experience."
+        },
+        {
+            "title": "Web your Campus",
+            "tech": "Laravel, AJAX, JS, MySQL, etc., Sublime.",
+            "duration": "N/A",
+            "role": "Role: Web Application Developer. Web Your Campus is a data-driven online platform that engages students, parents, and teachers in managing academic activities and performance. Contributed to the analysis, design, and development of new features for the platform. Designed, developed, and tested software enhancements for various application sizes (small, medium, large). Conducted UI, functionality, and database access testing to meet client requirements. Collaborated with developers to ensure accurate implementation of program and system specifications. Worked with functional users to design alternative system solutions based on feedback. Prepared documentation for both program and user levels, maintaining version control for updates. Assisted in reviewing and analyzing program specifications to ensure alignment with work process changes."
+        }
+    ],
+    "education": [
+        {
+            "degree": "AlignMinds Technologies, Kochi, India | Software Engineer | Feb  - Present",
+            "institution": "Developed reusable web components using LitElement including email/SMS notification",
+            "duration": "2021"
+        },
+        {
+            "degree": "Degree",
+            "institution": "systems, message modals, quiz management interfaces, and document storage",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Aventus Informatics, Koratty, India | Nov  - Feb 2021 |Jr. Software Engineer",
+            "institution": "Worked on Laravel to build the Web Application.",
+            "duration": "2018"
+        },
+        {
+            "degree": "Tecnonauts Technology Services Pvt Ltd, Kochi, India | Feb  - Oct | Web Developer",
+            "institution": "Participated in analysis, design, and new development of applications.",
+            "duration": "2018"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Laravel 11,10,8.0, 5.2,4.2",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tailwind CSS",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Lit (Web component)",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Microsoft Visual Studio",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Kibana Postman Git Asana",
+            "duration": "N/A"
+        },
+        {
+            "degree": "ChipsNBytes IT Management Services Pvt Ltd, Kochi, India | Oct  - Dec 2017|",
+            "institution": "Web Application Developer",
+            "duration": "2015"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Web Application Developer",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "WebComponent | Front Development",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "email/SMS notification systems, message modals, quiz management interfaces, and",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "DocuStore (document management system).",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: Lit",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: VS Code, Git",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Overview: A Learning Management System (LMS) platform that generates detailed reports",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Integrated email web component into the Angular-Node based Learning Management",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Node.js APIs",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: Angular 19, NodeJS, LitElement",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: VS Code, Git",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "LMS Reports |Backend Developer",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: Laravel 5.3, MySQL",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: VS Code, Git, Postman",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "ETC |Frontend Developer",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: React 18",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: VS Code, Git, Postman",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Thoroughbred |Backend Developer",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: Core PHP 5.4, MySQL, JavaScript",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: VS Code, Git, cPanel, Docker",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Crunchet Mobile App| Backend Developer",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: Laravel 5.3, MySQL",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: VS Code, Git, Postman",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: React, Node.js, Express",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: VS Code, Git, Postman",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "team registration, scoring, and scheduling to streamline tournament management.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: Laravel 8, MySQL.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: VS Code, Git, Postman.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Coast Soccer League |Backend Developer",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "platform’s functionality.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "reporting, and user management.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: Yii1, AJAX, JS, XML, CSS, MySQL",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: VS Code, Git, Postman",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Xcruit |Web Application Developer",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "providing better opportunities, that include both candidate and recruiter management.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "management.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: Laravel, JS, AJAX, Elasticsearch, MySQL, etc.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: VS Code, Kibana, GIT, etc.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Dreamplore |Web Application Developer",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: Core PHP, MySQL, etc.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: Sublime, cPanel.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "(small, medium, large).",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Environment: Laravel, AJAX, JS, MySQL, etc.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Degree",
+            "institution": "Tools: Sublime.",
+            "duration": "N/A"
+        },
+        {
+            "degree": "Masters of Computer Applications",
+            "institution": "N/A",
+            "duration": "2014"
+        },
+        {
+            "degree": "Bachelors of Computer Applications",
+            "institution": "Training and Certifications",
+            "duration": "2010"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Vineetha T Profile Highlights ▪ 8+ years of experience in Software Development in the IT industry. ▪ Experienced in Core PHP and frameworks such as Laravel and Yii. ▪ Skilled in front",
+            "issuer": "end technologies including HTML, CSS, and JavaScript (AJAX). ▪ Demonstrated experience in leading and guiding small development teams — overseeing task allocation, code reviews, and ensuring timely project delivery. ▪ Strong knowledge of programming logic, debugging techniques, and software development best practices. ▪ Possesses hands-on experience across the full Software Development Life Cycle (SDLC) including design, development, review, and integration testing. ▪ A proactive team player with excellent interpersonal, communication, and leadership skills. ▪ Highly adaptable and quick to learn new technologies and tools, capable of thriving in diverse work environments. ▪ Passionate about continuous learning and exploring emerging technologies. Work Experience AlignMinds Technologies, Kochi, India | Software Engineer | Feb 2021 - Present ▪ Developed reusable web components using LitElement including email/SMS notification systems, message modals, quiz management interfaces, and document storage (DocuStore) that can be reused across applications. ▪ Integrated web components into Angular/React applications and built supporting Node.js APIs for seamless functionality. ▪ Optimized existing products through performance tuning and code refactoring, improving system efficiency. ▪ Created automation test scripts using Node.js with Mocha and Jest frameworks. ▪ Maintained IBM product schema and attribute mappings, ensuring data integrity. ▪ Provided technical support for debugging and unit testing across development teams. ▪ Developed comprehensive user documentation and technical guides. Aventus Informatics, Koratty, India | Nov 2018 - Feb 2021 |Jr. Software Engineer ▪ Worked on Laravel to build the Web Application. ▪ Worked on both the Frontend and Backend sides of various applications. ▪ Built various features for the client's products. ▪ Supported the team with technical debugging and unit testing. ▪ Worked on user guides. Tecnonauts Technology Services Pvt Ltd, Kochi, India | Feb 2018 - Oct 2018| Web Developer ▪ Participated in analysis, design, and new development of applications. ▪ Designed, developed, and tested small, medium, and large-scale software enhancements. ▪ Create website layout/user interface by using standard HTML/CSS practices. Key Skills and Knowledge Laravel 11,10,8.0, 5.2,4.2 JavaScript HTML5 Core PHP CSS jQuery JSON AJAX Elasticsearch MySQL C Yii1 Tailwind CSS PostgreSQL Other Skills Node.js Angular.js React AWS Lit (Web component) Express Python Flask Tools Microsoft Visual Studio Code Kibana Postman Git Asana ▪ Integrate data from various back-end services and databases. ▪ Gather and refine specifications and requirements based on technical needs. ▪ Create and maintain software documentation. ▪ Be responsible for maintaining, expanding, and scaling our site. ChipsNBytes IT Management Services Pvt Ltd, Kochi, India | Oct 2015 - Dec 2017| Web Application Developer ▪ Participated in analysis, design, and new development of applications. ▪ Designed, developed, and tested small, medium, and large-scale software enhancements. ▪ Tested changes to the user interface, application functionality, and database access as required by the client organizations. Project Details WebComponent | Front Development Overview: Experienced in developing reusable and modular web components using LitElement and JavaScript. Built UI elements such as modals, editors, and notification components with cross-framework compatibility, focusing on performance, maintainability, and consistent design across applications. Responsibilities ▪ Developed modular, reusable web components for enterprise applications including email/SMS notification systems, message modals, quiz management interfaces, and DocuStore (document management system). ▪ Integrated components into Angular/React based applications with Node.js backend APIs. Environment: Lit Tools: VS Code, Git LMS Overview: A Learning Management System (LMS) platform that generates detailed reports on user activity, including course completion status (Completed, In Progress, Not Started, Archived) and usage statistics. LMS Application| Full stack Developer Responsibilities: ▪ Integrated email web component into the Angular-Node based Learning Management ▪ System, handling both front-end integration and backend connectivity. Developed Node.js APIs ▪ and implemented AWS SQS queue with Lambda functions for reliable email notification ▪ processing. Environment: Angular 19, NodeJS, LitElement Tools: VS Code, Git LMS Reports |Backend Developer Responsibilities: ▪ Resolved bugs within reporting modules to ensure accurate display of course statuses and user statistics. ▪ Improved stability and data consistency across report views used by administrators and instructors. Environment: Laravel 5.3, MySQL Tools: VS Code, Git, Postman ETC |Frontend Developer ETC is a global leader in the design and manufacturing of lighting, rigging, and control systems for entertainment and architectural applications. Responsibilities: ▪ Built features for project data extraction and enabled export/download of project configurations in XML and JSON formats, streamlining project documentation workflow. ▪ Integrated REST APIs to fetch, display, and manage real-time project data, ensuring accuracy and seamless interactivity. Environment: React 18 Tools: VS Code, Git, Postman Thoroughbred |Backend Developer Overview: Thoroughbred Analytics specializes in providing advanced data analytics for the thoroughbred horse racing industry. The project focused on integrating new responsive pages into an existing PHP project, leveraging the latest JavaScript technologies. Responsibilities: ▪ Integrated responsive pages with legacy PHP and modern JavaScript. ▪ Refactored core functions to support responsive design and improve UX. ▪ Collaborated with frontend team for data consistency and performance. Environment: Core PHP 5.4, MySQL, JavaScript Tools: VS Code, Git, cPanel, Docker Crunchet Overview: Crunchet is a platform that allows users to create and share meaningful stories by combining personal, web, and social media content. The app allows users to sign up and manage their profiles, and can now support both personal and organizational accounts. Crunchet Mobile App| Backend Developer Responsibilities: ▪ Ensured smooth integration of the new feature with the app’s backend, enabling users to select from multiple categories during the signup process. ▪ Added a new API to the existing app to support the signup process or organizational accounts, in addition to the pre-existing personal category. ▪ Improved user experience by streamlining the registration process for both personal and organizational accounts. Environment: Laravel 5.3, MySQL Tools: VS Code, Git, Postman Crunchet Web Application | Full stack Developer Responsibilities: ▪ Collaborated on responsive UI design and component-based architecture. ▪ Developed and integrated frontend components with dynamic API endpoints. ▪ Managed environment configuration, CORS policies, and frontend-backend communication. Environment: React, Node.js, Express Tools: VS Code, Git, Postman Tournament |Full stack Developer Overview: The Tournament System is an admin portal for managing multiple tournaments, including team registration via a payment gateway, bracketing, scheduling, scoring, and standings. Responsibilities: Developed a new application from scratch using Laravel 8, incorporating features such as team registration, scoring, and scheduling to streamline tournament management. Environment: Laravel 8, MySQL. Tools: VS Code, Git, Postman. Coast Soccer League |Backend Developer Overview: Coast Soccer League is the largest youth soccer gaming circuit in the United States. The web application serves as the admin portal for the league, managing team registrations, scheduling, standings, and reporting, while supporting both the CSL and referee apps. Users can utilize the CSL App to manage team details, report game results, and rate referees and other teams. Similarly, the Referee App helps referees manage schedules, keep score, and submit match reports. Responsibilities: ▪ Added new features to existing web pages as per client requirements, enhancing the platform’s functionality. ▪ Developed and maintained the backend logic to support team registration, match reporting, and user management. ▪ Prepared detailed documentation at both the program and user levels, ensuring smooth communication and ease of access for future updates. ▪ Provided timely bug fixes during critical situations, ensuring minimal downtime for users. Environment: Yii1, AJAX, JS, XML, CSS, MySQL Tools: VS Code, Git, Postman Xcruit |Web Application Developer Project Overview: Xcruit is an online job portal, which can connect recruiters and job seekers, providing better opportunities, that include both candidate and recruiter management. Responsibilities: ▪ Enhanced existing dynamic web pages by adding new features and optimizing performance to meet project deadlines. ▪ Integrated open-source and third-party applications, maintaining quality assurance and system integrity. ▪ Collaborated with the development team to create and debug small coding modules, ensuring proper execution. ▪ Troubleshot, tested, and optimized web applications and databases for better performance and reliability. ▪ Developed and deployed new features to streamline web application tools and procedures. ▪ Utilized GitHub for version control and worked with various data types for backend management. Environment: Laravel, JS, AJAX, Elasticsearch, MySQL, etc. Tools: VS Code, Kibana, GIT, etc. Dreamplore |Web Application Developer Project Overview: Dreamplore is a dynamic website for tours and travels, managed by the admin, offering a range of features to enhance user and admin interaction. Responsibilities: ▪ Assisted in all phases of the development lifecycle, including requirement gathering, report preparation, and database maintenance. ▪ Designed and developed dynamic websites based on client requirements, ensuring accurate data retrieval through PHP scripting. ▪ Collaborated with clients to understand feature requests, implementing additional functionality on existing web pages to meet deadlines. ▪ Developed and deployed new features to streamline web application processes and improve user experience. Environment: Core PHP, MySQL, etc. Tools: Sublime, cPanel. Web your Campus |Web Application Developer Project Overview: Web Your Campus is a data-driven online platform that engages students, parents, and teachers in managing academic activities and performance. Responsibilities: ▪ Contributed to the analysis, design, and development of new features for the platform. ▪ Designed, developed, and tested software enhancements for various application sizes (small, medium, large). ▪ Conducted UI, functionality, and database access testing to meet client requirements. ▪ Collaborated with developers to ensure accurate implementation of program and system specifications. ▪ Worked with functional users to design alternative system solutions based on feedback. ▪ Prepared documentation for both program and user levels, maintaining version control for updates. ▪ Assisted in reviewing and analyzing program specifications to ensure alignment with work process changes. Environment: Laravel, AJAX, JS, MySQL, etc. Tools: Sublime. Education Masters of Computer Applications – 2014 Bachelors of Computer Applications –2010 Training and Certifications Undergoing AI and Agentic AI Training for Developers PHP Certification from Spectrum",
+            "url": "N/A"
+        }
+    ]
+}

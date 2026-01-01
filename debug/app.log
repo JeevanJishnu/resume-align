@@ -1,0 +1,975 @@
+2026-01-01 09:44:38,464 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 09:46:52,728 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 09:46:53,511 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 09:47:32,828 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 09:47:33,595 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 09:47:54,615 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'skills.'
+2026-01-01 09:47:54,624 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'Work Experience'
+2026-01-01 09:47:54,624 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> skills at line: 'Key Skills and Knowledge'
+2026-01-01 09:47:54,624 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> projects at line: 'Project Details'
+2026-01-01 09:47:54,624 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'Education'
+2026-01-01 09:47:54,624 - CV-Reformatter-MVP - INFO - Segment Switch: education -> certifications at line: 'Training and Certifications'
+2026-01-01 09:47:54,963 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 09:47:55,134 - TemplateMapper - ERROR - Error in fill_template: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 137, in fill_template
+    table = doc.tables[t_idx]
+            ~~~~~~~~~~^^^^^^^
+IndexError: list index out of range
+2026-01-01 09:49:16,343 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 09:49:16,354 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 09:49:16,354 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 09:49:16,354 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 09:49:16,356 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 09:49:16,557 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 09:49:16,658 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 09:49:31,897 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 09:50:10,123 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 09:50:10,615 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 09:50:38,613 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'skills.'
+2026-01-01 09:50:38,613 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'Work Experience'
+2026-01-01 09:50:38,621 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> skills at line: 'Key Skills and Knowledge'
+2026-01-01 09:50:38,625 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> projects at line: 'Project Details'
+2026-01-01 09:50:38,629 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'Education'
+2026-01-01 09:50:38,638 - CV-Reformatter-MVP - INFO - Segment Switch: education -> certifications at line: 'Training and Certifications'
+2026-01-01 09:50:39,068 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 09:50:39,423 - TemplateMapper - INFO - SUCCESS: Saved document to output\65df2373-aa6e-4570-a6e1-9ad9d7c8319d_My_Template.docx
+2026-01-01 09:52:07,524 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 09:52:07,534 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 09:52:07,534 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 09:52:07,535 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 09:52:07,535 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 09:52:07,736 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 09:52:07,856 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 09:52:23,295 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 09:52:23,308 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 09:52:23,308 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 09:52:23,308 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 09:52:23,310 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 09:52:23,486 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 09:52:23,588 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 09:52:45,589 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 09:52:45,598 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 09:52:45,598 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 09:52:45,598 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 09:52:45,600 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 09:52:45,802 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 09:52:45,915 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 09:54:07,193 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 09:54:07,214 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 09:54:07,214 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 09:54:07,214 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 09:54:07,214 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 09:54:07,481 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 09:54:07,612 - TemplateMapper - ERROR - Error in fill_template: cannot access local variable 'is_sequential' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 220, in fill_template
+    if not is_sequential and not is_skill_section:
+           ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'is_sequential' where it is not associated with a value
+2026-01-01 09:55:22,838 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 09:55:23,921 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 09:55:23,928 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 09:55:23,929 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 09:55:23,929 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 09:55:23,930 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 09:55:24,136 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 09:55:24,240 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 09:56:26,484 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 09:56:26,495 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 09:56:26,496 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 09:56:26,496 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 09:56:26,497 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 09:56:26,710 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 09:56:26,960 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 10:00:21,442 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:01:53,790 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:01:53,798 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 10:01:53,798 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 10:01:53,798 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 10:01:53,798 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 10:01:54,002 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 10:01:54,115 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 10:03:15,953 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:03:20,286 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 10:03:20,623 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 10:04:56,303 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:04:56,315 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 10:04:56,315 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 10:04:56,315 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 10:04:56,316 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 10:04:56,513 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 10:04:56,622 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 10:06:05,631 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:06:10,461 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 10:06:11,038 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 10:06:37,184 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'skills.'
+2026-01-01 10:06:37,190 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'Work Experience'
+2026-01-01 10:06:37,190 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> skills at line: 'Key Skills and Knowledge'
+2026-01-01 10:06:37,199 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> projects at line: 'Project Details'
+2026-01-01 10:06:37,204 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'Education'
+2026-01-01 10:06:37,204 - CV-Reformatter-MVP - INFO - Segment Switch: education -> certifications at line: 'Training and Certifications'
+2026-01-01 10:06:37,646 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled up from 8 to 12 blocks.
+2026-01-01 10:06:37,646 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 10:06:37,946 - TemplateMapper - INFO - SUCCESS: Saved document to output\748188fd-4084-4e69-8823-eb9f73d8720f_My_Template.docx
+2026-01-01 10:08:13,672 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:08:13,687 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 10:08:13,687 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 10:08:13,687 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 10:08:13,688 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 10:09:21,471 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:09:21,483 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 10:09:21,484 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 10:09:21,484 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 10:09:21,485 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 10:09:21,685 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 10:09:21,825 - TemplateMapper - DEBUG - Mapping field: stype=SectionType.SKILLS, label='', rec_idx=0
+2026-01-01 10:09:21,825 - TemplateMapper - DEBUG - Mapping field: stype=SectionType.SKILLS, label='', rec_idx=0
+2026-01-01 10:09:21,826 - TemplateMapper - DEBUG - Mapping field: stype=SectionType.SKILLS, label='tools', rec_idx=0
+2026-01-01 10:09:21,844 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 10:10:52,207 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:12:05,509 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:12:05,518 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 10:12:05,518 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 10:12:05,518 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 10:12:05,519 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 10:12:05,734 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 10:12:05,877 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 10:14:43,988 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:14:44,001 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 10:14:44,001 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 10:14:44,001 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 10:14:44,002 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 10:14:44,196 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 10:14:44,315 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 10:15:53,204 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:18:36,768 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:18:36,820 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 10:18:36,820 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 10:18:36,820 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 10:18:36,826 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 10:18:37,796 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 10:18:38,430 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 10:20:59,617 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:24:41,351 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:24:41,364 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 10:24:41,365 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 10:24:41,365 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 10:24:41,366 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 10:24:41,617 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 10:24:41,691 - TemplateMapper - INFO - Detected 13 anchors in document for mapping: ['SUMMARY', 'WORK_EXPERIENCE', 'EDUCATION', 'PROJECTS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'SKILLS', 'SKILLS']
+2026-01-01 10:24:41,748 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 10:25:59,503 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:35:46,700 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:35:46,720 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 10:35:46,721 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 10:35:46,721 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 10:35:46,722 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 10:35:47,018 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 10:35:47,125 - TemplateMapper - INFO - Detected 13 anchors in document for mapping: ['SUMMARY', 'WORK_EXPERIENCE', 'EDUCATION', 'PROJECTS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'SKILLS', 'SKILLS']
+2026-01-01 10:35:47,200 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 10:35:59,791 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:37:10,599 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:37:10,611 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 10:37:10,611 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 10:37:10,611 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'PROJECT PORTFOLIO'
+2026-01-01 10:37:10,612 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'EDUCATION'
+2026-01-01 10:37:10,902 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 10:37:10,993 - TemplateMapper - INFO - Detected 13 anchors in document for mapping: ['SUMMARY', 'WORK_EXPERIENCE', 'EDUCATION', 'PROJECTS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'TOOLS', 'SKILLS', 'SKILLS']
+2026-01-01 10:37:11,078 - TemplateMapper - INFO - SUCCESS: Saved document to output/Vineetha_T_Reformatted_v6.docx
+2026-01-01 10:41:02,839 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:46:37,784 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:56:14,712 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:56:33,479 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 10:56:52,339 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 11:01:50,571 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 11:08:22,174 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 11:41:25,166 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 11:41:26,203 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'Core Competencies'
+2026-01-01 11:41:26,207 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'Professional Experience'
+2026-01-01 11:41:26,208 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'Key Projects:'
+2026-01-01 11:41:26,211 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'Education'
+2026-01-01 11:41:26,211 - CV-Reformatter-MVP - INFO - Segment Switch: education -> certifications at line: 'Certifications'
+2026-01-01 11:41:26,212 - CV-Reformatter-MVP - INFO - Segment Switch: certifications -> skills at line: 'Technologies / Tools'
+2026-01-01 11:41:26,275 - CV-Reformatter-MVP - INFO - P1 JOB 880b3615-1cac-441c-9fc0-a7d618ae36cf: Extracted Data for Pradeep Kumar P C
+2026-01-01 11:41:26,377 - CV-Reformatter-MVP - INFO - Generated Premium Standard CV at output\880b3615-1cac-441c-9fc0-a7d618ae36cf.docx
+2026-01-01 11:46:25,457 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 11:46:37,419 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 11:55:04,125 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 14 sections found.
+2026-01-01 11:55:05,314 - template_engine.template_extractor - INFO - Schema extraction complete for My_Template: 13 sections found.
+2026-01-01 11:55:45,867 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'skills.'
+2026-01-01 11:55:45,869 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'Work Experience'
+2026-01-01 11:55:45,870 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> skills at line: 'Key Skills and Knowledge'
+2026-01-01 11:55:45,872 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> projects at line: 'Project Details'
+2026-01-01 11:55:45,876 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'Education'
+2026-01-01 11:55:45,877 - CV-Reformatter-MVP - INFO - Segment Switch: education -> certifications at line: 'Training and Certifications'
+2026-01-01 11:55:46,089 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'Summary'
+2026-01-01 11:55:46,105 - TemplateMapper - INFO - Template Section transition: SUMMARY -> EDUCATION at 'Education'
+2026-01-01 11:55:46,114 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'Certification Status (Addressing Requirement)'
+2026-01-01 11:55:46,120 - TemplateMapper - INFO - Template Section transition: CERTIFICATIONS -> SKILLS at 'Technical Skills'
+2026-01-01 11:55:46,126 - TemplateMapper - INFO - Template Section transition: SKILLS -> PROJECTS at 'Project Profile'
+2026-01-01 11:55:46,192 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled up from 8 to 12 blocks.
+2026-01-01 11:55:46,192 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 11:55:46,834 - TemplateMapper - INFO - Detected 5 anchors in document for mapping: ['SUMMARY', 'EDUCATION', 'CERTIFICATIONS', 'SKILLS', 'PROJECTS']
+2026-01-01 11:55:46,836 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Vineetha T 8+ years of experience in Software Deve'
+2026-01-01 11:55:46,851 - TemplateMapper - DEBUG - Injecting into SKILLS rec 0 field 0: '[fill here]' -> 'Laravel, Javascript, Html5, PHP, CSS, jQuery, JSON'
+2026-01-01 11:55:46,891 - TemplateMapper - DEBUG - Advancing record to index 0 at 'Project #1:'
+2026-01-01 11:55:46,893 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 0: 'project title' -> 'WebComponent'
+2026-01-01 11:55:46,893 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:46,900 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 2: 'role' -> 'Front Development'
+2026-01-01 11:55:46,904 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 3: 'description' -> 'Overview: Experienced in developing reusable and m'
+2026-01-01 11:55:46,905 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 4: 'technology stack' -> 'VS Code, Git'
+2026-01-01 11:55:46,905 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 5: 'responsibilities' -> 'Overview: Experienced in developing reusable and m'
+2026-01-01 11:55:46,905 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 6: 'responsibilities' -> 'Overview: Experienced in developing reusable and m'
+2026-01-01 11:55:46,905 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 7: 'responsibilities' -> 'Overview: Experienced in developing reusable and m'
+2026-01-01 11:55:46,913 - TemplateMapper - DEBUG - Advancing record to index 1 at 'Project #2:'
+2026-01-01 11:55:46,915 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 0: 'project title' -> 'LMS Application'
+2026-01-01 11:55:46,917 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:46,918 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 2: 'description' -> 'Integrated email web component into the Angular-No'
+2026-01-01 11:55:46,920 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 3: 'technology stack' -> 'VS Code, Git'
+2026-01-01 11:55:46,922 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 4: 'responsibilities' -> 'Integrated email web component into the Angular-No'
+2026-01-01 11:55:46,924 - TemplateMapper - DEBUG - Advancing record to index 2 at 'Project #3:'
+2026-01-01 11:55:46,925 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 2 field 0: 'project title' -> 'LMS Reports'
+2026-01-01 11:55:46,926 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 2 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:46,928 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 2 field 2: 'role' -> 'Backend Developer'
+2026-01-01 11:55:46,928 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 2 field 3: 'description' -> 'Resolved bugs within reporting modules to ensure a'
+2026-01-01 11:55:46,932 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 2 field 4: 'technology stack' -> 'VS Code, Git, Postman'
+2026-01-01 11:55:46,932 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 2 field 5: 'responsibilities' -> 'Resolved bugs within reporting modules to ensure a'
+2026-01-01 11:55:46,934 - TemplateMapper - DEBUG - Advancing record to index 3 at 'Project #4:'
+2026-01-01 11:55:46,936 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 3 field 0: 'project title' -> 'ETC'
+2026-01-01 11:55:46,938 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 3 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:46,939 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 3 field 2: 'role' -> 'Frontend Developer'
+2026-01-01 11:55:46,939 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 3 field 3: 'description' -> 'ETC is a global leader in the design and manufactu'
+2026-01-01 11:55:46,942 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 3 field 4: 'technology stack' -> 'VS Code, Git, Postman'
+2026-01-01 11:55:46,942 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 3 field 5: 'responsibilities' -> 'ETC is a global leader in the design and manufactu'
+2026-01-01 11:55:46,942 - TemplateMapper - DEBUG - Advancing record to index 4 at 'Project #5:'
+2026-01-01 11:55:46,946 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 4 field 0: 'project title' -> 'Thoroughbred'
+2026-01-01 11:55:46,947 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 4 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:46,949 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 4 field 2: 'role' -> 'Backend Developer'
+2026-01-01 11:55:46,950 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 4 field 3: 'description' -> 'Overview: Thoroughbred Analytics specializes in pr'
+2026-01-01 11:55:46,952 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 4 field 4: 'technology stack' -> 'VS Code, Git, cPanel, Docker'
+2026-01-01 11:55:46,952 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 4 field 5: 'responsibilities' -> 'Overview: Thoroughbred Analytics specializes in pr'
+2026-01-01 11:55:46,954 - TemplateMapper - DEBUG - Advancing record to index 5 at 'Project #6:'
+2026-01-01 11:55:46,956 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 5 field 0: 'project title' -> 'Crunchet Mobile App'
+2026-01-01 11:55:46,957 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 5 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:46,957 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 5 field 2: 'role' -> 'Backend Developer'
+2026-01-01 11:55:46,960 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 5 field 3: 'description' -> 'Ensured smooth integration of the new feature with'
+2026-01-01 11:55:46,962 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 5 field 4: 'technology stack' -> 'VS Code, Git, Postman'
+2026-01-01 11:55:46,962 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 5 field 5: 'responsibilities' -> 'Ensured smooth integration of the new feature with'
+2026-01-01 11:55:46,964 - TemplateMapper - DEBUG - Advancing record to index 6 at 'Project #7:'
+2026-01-01 11:55:46,966 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 6 field 0: 'project title' -> 'Crunchet Web Application'
+2026-01-01 11:55:46,968 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 6 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:46,970 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 6 field 2: 'description' -> 'Collaborated on responsive UI design and component'
+2026-01-01 11:55:46,971 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 6 field 3: 'technology stack' -> 'VS Code, Git, Postman'
+2026-01-01 11:55:46,972 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 6 field 4: 'responsibilities' -> 'Collaborated on responsive UI design and component'
+2026-01-01 11:55:46,975 - TemplateMapper - DEBUG - Advancing record to index 7 at 'Project #8:'
+2026-01-01 11:55:46,975 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 7 field 0: 'project title' -> 'Tournament'
+2026-01-01 11:55:46,977 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 7 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:46,977 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 7 field 2: 'description' -> 'Overview: The Tournament System is an admin portal'
+2026-01-01 11:55:46,980 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 7 field 3: 'technology stack' -> 'VS Code, Git, Postman.'
+2026-01-01 11:55:46,982 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 7 field 4: 'responsibilities' -> 'Overview: The Tournament System is an admin portal'
+2026-01-01 11:55:46,984 - TemplateMapper - DEBUG - Advancing record to index 8 at 'Project #9:'
+2026-01-01 11:55:46,986 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 8 field 0: 'project title' -> 'Coast Soccer League'
+2026-01-01 11:55:46,989 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 8 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:46,990 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 8 field 2: 'role' -> 'Backend Developer'
+2026-01-01 11:55:46,992 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 8 field 3: 'description' -> 'Overview: Coast Soccer League is the largest youth'
+2026-01-01 11:55:46,992 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 8 field 4: 'technology stack' -> 'VS Code, Git, Postman'
+2026-01-01 11:55:46,992 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 8 field 5: 'responsibilities' -> 'Overview: Coast Soccer League is the largest youth'
+2026-01-01 11:55:46,997 - TemplateMapper - DEBUG - Advancing record to index 9 at 'Project #10:'
+2026-01-01 11:55:46,997 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 9 field 0: 'project title' -> 'Xcruit'
+2026-01-01 11:55:46,999 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 9 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:47,001 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 9 field 2: 'role' -> 'Web Application Developer'
+2026-01-01 11:55:47,002 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 9 field 3: 'description' -> 'Xcruit is an online job portal, which can connect '
+2026-01-01 11:55:47,002 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 9 field 4: 'technology stack' -> 'VS Code, Kibana, GIT, etc.'
+2026-01-01 11:55:47,005 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 9 field 5: 'responsibilities' -> 'Xcruit is an online job portal, which can connect '
+2026-01-01 11:55:47,007 - TemplateMapper - DEBUG - Advancing record to index 10 at 'Project #11:'
+2026-01-01 11:55:47,007 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 10 field 0: 'project title' -> 'Dreamplore'
+2026-01-01 11:55:47,007 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 10 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:47,010 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 10 field 2: 'role' -> 'Web Application Developer'
+2026-01-01 11:55:47,012 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 10 field 3: 'description' -> 'Dreamplore is a dynamic website for tours and trav'
+2026-01-01 11:55:47,012 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 10 field 4: 'technology stack' -> 'Sublime, cPanel.'
+2026-01-01 11:55:47,014 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 10 field 5: 'responsibilities' -> 'Dreamplore is a dynamic website for tours and trav'
+2026-01-01 11:55:47,017 - TemplateMapper - DEBUG - Advancing record to index 11 at 'Project #12:'
+2026-01-01 11:55:47,018 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 11 field 0: 'project title' -> 'Web your Campus'
+2026-01-01 11:55:47,019 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 11 field 1: 'duration' -> 'N/A'
+2026-01-01 11:55:47,021 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 11 field 2: 'role' -> 'Web Application Developer'
+2026-01-01 11:55:47,022 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 11 field 3: 'description' -> 'Web Your Campus is a data-driven online platform t'
+2026-01-01 11:55:47,023 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 11 field 4: 'technology stack' -> 'Sublime.'
+2026-01-01 11:55:47,025 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 11 field 5: 'responsibilities' -> 'Web Your Campus is a data-driven online platform t'
+2026-01-01 11:55:47,054 - TemplateMapper - INFO - SUCCESS: Saved document to output\f463f28f-b5e2-4ec3-abe6-17d5971c0865_My_Template.docx
+2026-01-01 11:56:33,147 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'Key Skills and Knowledge'
+2026-01-01 11:56:33,149 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'Work Experience'
+2026-01-01 11:56:33,152 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'Project Details'
+2026-01-01 11:56:33,154 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'Education'
+2026-01-01 11:56:33,156 - CV-Reformatter-MVP - INFO - Segment Switch: education -> certifications at line: 'Training and Certifications'
+2026-01-01 11:56:33,322 - CV-Reformatter-MVP - INFO - P1 JOB df60a57f-6abe-4fdb-8954-2987454301b1: Extracted Data for KHILA
+2026-01-01 11:56:33,541 - CV-Reformatter-MVP - INFO - Generated Premium Standard CV at output\df60a57f-6abe-4fdb-8954-2987454301b1.docx
+2026-01-01 12:26:33,777 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 12:29:15,841 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 12:31:10,550 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 12:34:46,993 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> education at line: 'Education'
+2026-01-01 12:34:46,993 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'Technical Skills'
+2026-01-01 12:34:47,215 - CV-Reformatter-MVP - INFO - P1 JOB e26f982e-0fd2-4760-a065-5d7c9c6ada9d: Extracted Data for Pradeep Kumar P C
+2026-01-01 12:34:47,329 - CV-Reformatter-MVP - INFO - Generated Premium Standard CV at output\e26f982e-0fd2-4760-a065-5d7c9c6ada9d.docx
+2026-01-01 12:39:22,038 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 12:43:36,151 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> education at line: 'Education'
+2026-01-01 12:43:36,151 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'Technical Skills'
+2026-01-01 12:43:36,151 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> projects at line: 'Project Profile'
+2026-01-01 12:43:36,191 - CV-Reformatter-MVP - INFO - P1 JOB 58f19d34-c394-4098-bd90-cd4049380865: Extracted Data for Pradeep Kumar P C
+2026-01-01 12:43:36,272 - CV-Reformatter-MVP - INFO - Generated Premium Standard CV at output\58f19d34-c394-4098-bd90-cd4049380865.docx
+2026-01-01 12:43:53,794 - template_engine.template_extractor - INFO - Schema extraction complete for Extractor_Master: 7 sections found.
+2026-01-01 12:43:53,889 - template_engine.template_extractor - INFO - Schema extraction complete for Extractor_Master: 6 sections found.
+2026-01-01 12:45:03,495 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 12:48:16,985 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (9b019e15-2ade-4e25-a4b6-1c338e9676ea)
+2026-01-01 12:48:17,984 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 12:48:17,984 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 12:48:17,984 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 12:48:18,108 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 12:48:18,114 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 12:48:18,115 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 12:48:18,118 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 12:48:18,119 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 12:48:18,130 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 12:48:18,136 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 12:48:18,143 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 12:48:18,143 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 12:48:18,238 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 12:48:18,239 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 12:48:18,248 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 12:48:18,252 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 12:49:47,671 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 12:51:49,541 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (8e1042d0-475b-4093-ac60-f371ab51e24c)
+2026-01-01 12:51:50,500 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 12:51:50,502 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 12:51:50,502 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 12:51:50,638 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 12:51:50,650 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 12:51:50,652 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 12:51:50,655 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 12:51:50,656 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 12:51:50,663 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 12:51:50,668 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 12:51:50,671 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 12:51:50,671 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 12:51:50,747 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 12:51:50,748 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 12:51:50,752 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 12:51:50,760 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 12:53:45,446 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 12:54:08,477 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (b5cf85b4-0229-46f2-8f75-c0a1723eb02f)
+2026-01-01 12:54:10,924 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 12:54:10,926 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 12:54:10,929 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 12:54:11,595 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 12:54:11,605 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 12:54:11,608 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 12:54:11,617 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 12:54:11,620 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 12:54:11,633 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 12:54:11,650 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 12:54:11,660 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 12:54:11,661 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 12:54:12,153 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 12:54:12,154 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 12:54:12,163 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 12:54:12,169 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 12:56:26,305 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (3bbc0c69-1672-45a6-809c-697244937ce1)
+2026-01-01 12:56:28,236 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 12:56:28,236 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 12:56:28,237 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 12:56:28,434 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 12:56:28,439 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 12:56:28,441 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 12:56:28,454 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 12:56:28,457 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 12:56:28,470 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 12:56:28,563 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 12:56:28,670 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 12:56:28,670 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 12:56:29,050 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 12:56:29,051 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 12:56:29,057 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 12:56:29,059 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 13:00:21,069 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 13:03:58,460 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 13:06:52,899 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 13:08:49,107 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 13:11:13,854 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 13:12:44,160 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 13:14:43,119 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 13:21:55,293 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 13:24:43,068 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 13:27:21,963 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:04:26,829 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:07:12,874 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:10:03,843 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:12:54,836 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:16:17,214 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:18:05,040 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:20:08,441 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:25:14,280 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:26:56,568 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:29:54,177 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:30:59,958 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (1a338ea8-dedf-42e3-add1-665987fbc430)
+2026-01-01 14:31:00,855 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 14:31:00,855 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 14:31:00,855 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 14:31:01,009 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 14:31:01,013 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 14:31:01,016 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 14:31:01,022 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 14:31:01,023 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 14:31:01,040 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 14:31:01,052 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 14:31:01,060 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 14:31:01,061 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 14:31:01,178 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 14:31:01,181 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 14:31:01,187 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 14:31:01,276 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 14:35:46,924 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:36:49,018 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:39:11,241 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (9e42e37e-7421-4853-b519-b698521ff2ef)
+2026-01-01 14:39:12,161 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 14:39:12,163 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 14:39:12,163 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 14:39:12,285 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 14:39:12,289 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 14:39:12,292 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 14:39:12,296 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 14:39:12,297 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 14:39:12,302 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 14:39:12,309 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 14:39:12,311 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 14:39:12,312 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 14:39:12,431 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 14:39:12,431 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 14:39:12,435 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 14:39:12,439 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 14:40:48,650 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:41:59,905 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (f6b0ff94-7edb-4c1f-bca4-8c37e8dac28e)
+2026-01-01 14:42:00,898 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 14:42:00,898 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 14:42:00,898 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 14:42:01,004 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 14:42:01,007 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 14:42:01,009 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 14:42:01,013 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 14:42:01,015 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 14:42:01,020 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 14:42:01,025 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 14:42:01,030 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 14:42:01,030 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 14:42:01,115 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 14:42:01,117 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 14:42:01,120 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 14:42:01,122 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 14:43:18,323 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:45:25,294 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (1044d2be-ce39-49dc-83f6-911a1488ffc6)
+2026-01-01 14:45:26,753 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 14:45:26,754 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 14:45:26,755 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 14:45:26,910 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 14:45:26,916 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 14:45:26,918 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 14:45:26,921 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 14:45:26,923 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 14:45:26,932 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 14:45:26,938 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 14:45:26,962 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 14:45:26,962 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 14:45:27,250 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 14:45:27,252 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 14:45:27,260 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 14:45:27,266 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 14:46:44,596 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:48:22,428 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (c31f37e8-5c84-4263-aa65-50f957fd7b64)
+2026-01-01 14:48:23,703 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 14:48:23,704 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 14:48:23,706 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 14:48:23,922 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 14:48:23,938 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 14:48:23,941 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 14:48:23,944 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 14:48:23,948 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 14:48:23,961 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 14:48:23,986 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 14:48:23,992 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 14:48:23,992 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 14:48:24,357 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 14:48:24,361 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 14:48:24,367 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 14:48:24,383 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 14:49:39,576 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:50:58,258 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (9458a5bb-1f22-45aa-b9fc-a0ea58b3dbaf)
+2026-01-01 14:50:59,547 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 14:50:59,547 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 14:50:59,547 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 14:50:59,747 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 14:50:59,758 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 14:50:59,761 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 14:50:59,763 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 14:50:59,769 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 14:50:59,778 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 14:50:59,786 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 14:50:59,796 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 14:50:59,796 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 14:51:00,006 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 14:51:00,009 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 14:51:00,054 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 14:51:00,068 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 14:51:57,077 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 14:53:33,117 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (e59a70a5-c8ea-4abf-abfd-a0f908d37536)
+2026-01-01 14:53:34,661 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 14:53:34,661 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 14:53:34,661 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 14:53:34,955 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 14:53:34,964 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 14:53:34,970 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 14:53:34,974 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 14:53:34,976 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 14:53:34,989 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 14:53:35,007 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 14:53:35,011 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 14:53:35,013 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 14:53:35,173 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 14:53:35,174 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 14:53:35,178 - TemplateMapper - ERROR - Error in fill_template: 'Table' object has no attribute 'text'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\template_engine\template_mapper.py", line 167, in fill_template
+    if prev_elem.text.strip().endswith(':') or len(prev_elem.text.strip()) < 30:
+       ^^^^^^^^^^^^^^
+AttributeError: 'Table' object has no attribute 'text'
+2026-01-01 14:53:35,180 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 14:56:21,260 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 14:56:21,268 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 14:56:21,268 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 14:56:21,273 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 14:56:21,275 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 14:56:21,276 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 14:56:21,292 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 14:56:21,300 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 14:56:21,300 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 14:56:21,561 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 14:56:21,566 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Highly experienced Amadeus GDS Integration Consult'
+2026-01-01 14:56:21,566 - TemplateMapper - ERROR - Error in fill_template: unhashable type: 'list'
+Traceback (most recent call last):
+  File "C:\Users\Alignminds\Documents\CV Perplexity\cv-reformatter-mvp\jd_optimizer\core\template_mapper.py", line 115, in fill_template
+    list_data = list(dict.fromkeys(s_list + t_list))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+2026-01-01 15:00:43,511 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 15:00:43,576 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 15:00:43,576 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 15:00:43,592 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 15:00:43,624 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 15:00:43,656 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 15:00:43,715 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled down from 1 to 0 blocks.
+2026-01-01 15:00:43,720 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 15:00:44,663 - TemplateMapper - INFO - Detected 5 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'PROJECTS', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 15:00:44,714 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 0: 'project title' -> 'P1'
+2026-01-01 15:00:44,998 - TemplateMapper - INFO - SUCCESS: Saved document to output\V3_8b49bc50-129c-48b6-bcaa-225b5a11e7f3_Extractor_Master.docx
+2026-01-01 15:02:08,346 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 15:04:03,251 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 15:05:43,991 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 15:06:54,963 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 15:08:16,092 - CV-Reformatter-MVP - INFO - Processing Upload: JERIN JACOB[4y_6m] 1.pdf (8a99eddf-e162-4cad-8b8c-2080d75edbe4)
+2026-01-01 15:08:17,934 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'PROFESSIONAL EXPERIENCE'
+2026-01-01 15:08:17,934 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> education at line: 'EDUCATION & CERTIFICATIONS'
+2026-01-01 15:08:17,934 - CV-Reformatter-MVP - INFO - Segment Switch: education -> skills at line: 'TECHNICAL SKILLS'
+2026-01-01 15:08:18,186 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 15:08:18,192 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 15:08:18,192 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 15:08:18,199 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 15:08:18,202 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 15:08:18,208 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 15:08:18,223 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 15:08:18,225 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 15:08:18,233 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 15:08:18,601 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 15:08:18,614 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'JERIN JACOB Mobile: +91 9745395442 Email: jerinjuv'
+2026-01-01 15:08:18,635 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'Present)'
+2026-01-01 15:08:18,642 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: present)' -> 'Present)'
+2026-01-01 15:08:18,642 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: company: present))
+2026-01-01 15:08:18,659 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'company: present)' -> 'Travel Consultant (2023'
+2026-01-01 15:08:18,659 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: role: [fill here])
+2026-01-01 15:08:18,673 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 0: 'role: [fill here]' -> 'Safiya Travels – Kerala, India'
+2026-01-01 15:08:18,677 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 1: 'role: safiya travels – kerala, india' -> 'Safiya Travels – Kerala, India'
+2026-01-01 15:08:18,692 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 2: 'duration: [fill here]
+responsibilities:
+[fill here]' -> '2023)'
+2026-01-01 15:08:18,704 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 3 (Label: role: [fill here])
+2026-01-01 15:08:18,708 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 0: 'role: [fill here]' -> 'N/A'
+2026-01-01 15:08:18,729 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 1: 'role: n/a' -> 'N/A'
+2026-01-01 15:08:18,757 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 4 (Label: company: n/a)
+2026-01-01 15:08:18,896 - TemplateMapper - INFO - SUCCESS: Saved document to output\8a99eddf-e162-4cad-8b8c-2080d75edbe4.docx
+2026-01-01 15:08:18,896 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 15:10:16,667 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 15:10:16,672 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 15:10:16,672 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 15:10:16,679 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 15:10:16,679 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 15:10:16,698 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 15:10:16,713 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 15:10:16,722 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 15:10:16,722 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 15:10:16,963 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 15:10:16,963 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Highly skilled Amadeus GDS Integration Consultant '
+2026-01-01 15:10:16,972 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'Present)'
+2026-01-01 15:10:16,980 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: present)' -> 'Present)'
+2026-01-01 15:10:16,980 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: company: present))
+2026-01-01 15:10:16,980 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'company: present)' -> 'Travel Consultant (2023'
+2026-01-01 15:10:16,996 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: role: [fill here])
+2026-01-01 15:10:16,996 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 0: 'role: [fill here]' -> 'Safiya Travels – Kerala, India'
+2026-01-01 15:10:17,004 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 1: 'role: safiya travels – kerala, india' -> 'Safiya Travels – Kerala, India'
+2026-01-01 15:10:17,005 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 2: 'duration: [fill here]
+responsibilities:
+[fill here]' -> '2023)'
+2026-01-01 15:10:17,012 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 3 (Label: role: [fill here])
+2026-01-01 15:10:17,012 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 0: 'role: [fill here]' -> 'N/A'
+2026-01-01 15:10:17,012 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 1: 'role: n/a' -> 'N/A'
+2026-01-01 15:10:17,022 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 4 (Label: company: n/a)
+2026-01-01 15:10:17,197 - TemplateMapper - INFO - SUCCESS: Saved document to output\V3_1c37865e-8860-41b4-8a27-d870bf9abdc0_Extractor_Master.docx
+2026-01-01 15:10:22,224 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 15:10:22,227 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 15:10:22,227 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 15:10:22,233 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 15:10:22,238 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 15:10:22,238 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 15:10:22,256 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled down from 1 to 0 blocks.
+2026-01-01 15:10:22,268 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 4 blocks.
+2026-01-01 15:10:22,268 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 15:10:22,508 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 15:10:22,508 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Highly skilled Amadeus GDS Integration Consultant '
+2026-01-01 15:10:22,516 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'Present)'
+2026-01-01 15:10:22,516 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: present)' -> 'Present)'
+2026-01-01 15:10:22,516 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: company: present))
+2026-01-01 15:10:22,516 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'company: present)' -> 'Travel Consultant (2023'
+2026-01-01 15:10:22,541 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: role: [fill here])
+2026-01-01 15:10:22,541 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 0: 'role: [fill here]' -> 'Safiya Travels – Kerala, India'
+2026-01-01 15:10:22,557 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 1: 'role: safiya travels – kerala, india' -> 'Safiya Travels – Kerala, India'
+2026-01-01 15:10:22,557 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 2: 'duration: [fill here]
+responsibilities:
+[fill here]' -> '2023)'
+2026-01-01 15:10:22,568 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 3 (Label: role: [fill here])
+2026-01-01 15:10:22,568 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 0: 'role: [fill here]' -> 'N/A'
+2026-01-01 15:10:22,571 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 1: 'role: n/a' -> 'N/A'
+2026-01-01 15:10:22,582 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 4 (Label: company: n/a)
+2026-01-01 15:10:22,739 - TemplateMapper - INFO - SUCCESS: Saved document to output\V3_db86199a-f7fb-4583-bfd1-f869f0aaa0fe_Extractor_Master.docx
+2026-01-01 15:12:45,550 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 15:13:10,757 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 15:13:10,762 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 15:13:10,766 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 15:13:10,771 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 15:13:10,773 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 15:13:10,782 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 15:13:10,788 - TemplateMapper - INFO - Replication SectionType.PROJECTS: Found 1 content blocks. Need 0.
+2026-01-01 15:13:10,788 - TemplateMapper - INFO - Replication SectionType.WORK_EXPERIENCE: Found 1 content blocks. Need 4.
+2026-01-01 15:13:10,789 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up to 4 blocks.
+2026-01-01 15:13:10,795 - TemplateMapper - INFO - Replication SectionType.EDUCATION: Found 1 content blocks. Need 3.
+2026-01-01 15:13:10,796 - TemplateMapper - INFO - Replicated SectionType.EDUCATION: Scaled up to 3 blocks.
+2026-01-01 15:13:10,796 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 15:13:11,159 - TemplateMapper - INFO - Detected 6 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'PROJECTS', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 15:13:11,161 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Highly skilled Amadeus GDS Integration Consultant '
+2026-01-01 15:13:11,176 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'Present)'
+2026-01-01 15:13:11,181 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: present)' -> 'Present)'
+2026-01-01 15:13:11,185 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: company: present))
+2026-01-01 15:13:11,185 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'company: present)' -> 'Travel Consultant (2023'
+2026-01-01 15:13:11,192 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: role: [fill here])
+2026-01-01 15:13:11,192 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 0: 'role: [fill here]' -> 'Safiya Travels – Kerala, India'
+2026-01-01 15:13:11,197 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 1: 'role: safiya travels – kerala, india' -> 'Safiya Travels – Kerala, India'
+2026-01-01 15:13:11,210 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 2: 'duration: [fill here]
+responsibilities:
+[fill here]' -> '2023)'
+2026-01-01 15:13:11,218 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 3 (Label: role: [fill here])
+2026-01-01 15:13:11,220 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 0: 'role: [fill here]' -> 'N/A'
+2026-01-01 15:13:11,226 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 1: 'role: n/a' -> 'N/A'
+2026-01-01 15:13:11,232 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 4 (Label: company: n/a)
+2026-01-01 15:13:11,421 - TemplateMapper - INFO - SUCCESS: Saved document to output\V3_80cb87a3-9280-4cf2-a20e-a0809f6f4ba9_Extractor_Master.docx
+2026-01-01 15:17:27,954 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 15:18:05,935 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 15:18:05,937 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 15:18:05,937 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 15:18:05,939 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 15:18:05,939 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 15:18:05,942 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 15:18:05,942 - TemplateMapper - INFO - Replication SectionType.PROJECTS: Found 1 content blocks. Need 0.
+2026-01-01 15:18:05,942 - TemplateMapper - INFO - Replication SectionType.WORK_EXPERIENCE: Found 1 content blocks. Need 4.
+2026-01-01 15:18:05,942 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up to 4 blocks.
+2026-01-01 15:18:05,944 - TemplateMapper - INFO - Replication SectionType.EDUCATION: Found 1 content blocks. Need 3.
+2026-01-01 15:18:05,944 - TemplateMapper - INFO - Replicated SectionType.EDUCATION: Scaled up to 3 blocks.
+2026-01-01 15:18:05,944 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 15:18:05,985 - TemplateMapper - INFO - Detected 6 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'PROJECTS', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 15:18:05,986 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Highly skilled Amadeus GDS Integration Consultant '
+2026-01-01 15:18:05,990 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'Present)'
+2026-01-01 15:18:05,991 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: present)' -> 'Present)'
+2026-01-01 15:18:05,992 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: company: present))
+2026-01-01 15:18:05,992 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'company: present)' -> 'Travel Consultant (2023'
+2026-01-01 15:18:05,994 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: role: [fill here])
+2026-01-01 15:18:05,994 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 0: 'role: [fill here]' -> 'Safiya Travels – Kerala, India'
+2026-01-01 15:18:05,995 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 1: 'role: safiya travels – kerala, india' -> 'Safiya Travels – Kerala, India'
+2026-01-01 15:18:05,996 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 2: 'duration: [fill here]
+responsibilities:
+[fill here]' -> '2023)'
+2026-01-01 15:18:05,997 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 3 (Label: role: [fill here])
+2026-01-01 15:18:05,997 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 0: 'role: [fill here]' -> 'N/A'
+2026-01-01 15:18:05,997 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 1: 'role: n/a' -> 'N/A'
+2026-01-01 15:18:05,998 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 4 (Label: company: n/a)
+2026-01-01 15:18:06,036 - TemplateMapper - INFO - SUCCESS: Saved document to output\V3_839584b4-66ff-4822-a296-9636a5e1c520_Extractor_Master.docx
+2026-01-01 15:21:57,533 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 15:21:57,533 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 15:21:57,543 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 15:21:57,547 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 15:21:57,556 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 15:21:57,559 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 15:21:57,569 - TemplateMapper - INFO - Replication SectionType.PROJECTS: Found 1 content blocks. Need 0.
+2026-01-01 15:21:57,569 - TemplateMapper - INFO - Replication SectionType.WORK_EXPERIENCE: Found 1 content blocks. Need 4.
+2026-01-01 15:21:57,569 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up to 4 blocks.
+2026-01-01 15:21:57,577 - TemplateMapper - INFO - Replication SectionType.EDUCATION: Found 1 content blocks. Need 3.
+2026-01-01 15:21:57,581 - TemplateMapper - INFO - Replicated SectionType.EDUCATION: Scaled up to 3 blocks.
+2026-01-01 15:21:57,581 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 15:21:57,848 - TemplateMapper - INFO - Detected 6 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'PROJECTS', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 15:21:57,849 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Highly experienced Travel Consultant with 5+ years'
+2026-01-01 15:21:57,865 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'Travel Consultant / Call Centre Executive'
+2026-01-01 15:21:57,905 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: travel consultant / call centre executive' -> 'Travel Consultant / Call Centre Executive'
+2026-01-01 15:21:57,913 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 2: 'duration: [fill here]
+responsibilities:
+[fill here]' -> '2025 – Present'
+2026-01-01 15:21:57,921 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: role: [fill here])
+2026-01-01 15:21:57,921 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'role: [fill here]' -> 'Travel Consultant'
+2026-01-01 15:21:57,921 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 1: 'role: travel consultant' -> 'Travel Consultant'
+2026-01-01 15:21:57,921 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: company: travel consultant)
+2026-01-01 15:21:57,932 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 0: 'company: travel consultant' -> 'Trinity Air Travel and Tours'
+2026-01-01 15:21:57,932 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 3 (Label: role: [fill here])
+2026-01-01 15:21:57,932 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 0: 'role: [fill here]' -> 'Travel Consultant'
+2026-01-01 15:21:57,932 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 3 field 1: 'role: travel consultant' -> 'Travel Consultant'
+2026-01-01 15:21:57,947 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 4 (Label: company: travel consultant)
+2026-01-01 15:21:58,082 - TemplateMapper - INFO - SUCCESS: Saved document to output\V3_4df6e694-742d-40f9-a37e-17562a817a7c_Extractor_Master.docx
+2026-01-01 15:24:24,657 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 15:28:46,495 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 15:34:32,650 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 15:45:17,327 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 15:45:52,731 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.
+2026-01-01 16:49:23,002 - CV-Reformatter-MVP - INFO - Processing Upload: AM0258_Akhila J.pdf (d932530b-312c-4aee-8b46-5154c298003e)
+2026-01-01 16:49:25,483 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> skills at line: 'Key Skills and Knowledge'
+2026-01-01 16:49:25,483 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> experience at line: 'Work Experience'
+2026-01-01 16:49:25,483 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> projects at line: 'Project Details'
+2026-01-01 16:49:25,491 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'Education'
+2026-01-01 16:49:25,493 - CV-Reformatter-MVP - INFO - Segment Switch: education -> certifications at line: 'Training and Certifications'
+2026-01-01 16:49:26,017 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 16:49:26,026 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 16:49:26,027 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 16:49:26,031 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 16:49:26,031 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 16:49:26,042 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 16:49:26,048 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled up from 1 to 4 blocks.
+2026-01-01 16:49:26,048 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 5 blocks.
+2026-01-01 16:49:26,048 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 16:49:26,363 - TemplateMapper - INFO - Detected 13 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'PROJECTS', 'PROJECTS', 'PROJECTS', 'PROJECTS', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 16:49:26,364 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Experienced Project Manager with over 10+ years of'
+2026-01-01 16:49:26,378 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'N/A'
+2026-01-01 16:49:26,380 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: n/a' -> 'N/A'
+2026-01-01 16:49:26,395 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: company: n/a)
+2026-01-01 16:49:26,397 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'company: n/a' -> 'Project Manager'
+2026-01-01 16:49:26,398 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: role: [fill here])
+2026-01-01 16:49:26,591 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 4 (Label: role: [fill here])
+2026-01-01 16:49:26,591 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 4 field 0: 'role: [fill here]' -> 'Associate IP Operations'
+2026-01-01 16:49:26,595 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 4 field 1: 'role: associate ip operations' -> 'Associate IP Operations'
+2026-01-01 16:49:26,598 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 4 field 2: 'duration: [fill here]
+responsibilities:
+[fill here]' -> 'November 2010 to April 2012'
+2026-01-01 16:49:26,611 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 5 (Label: role: [fill here])
+2026-01-01 16:49:26,628 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 0: 'project title' -> 'Project Name:  RepliGen'
+2026-01-01 16:49:26,629 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 1: 'technologies' -> 'N/A'
+2026-01-01 16:49:26,631 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 2: 'role' -> 'Project Manager'
+2026-01-01 16:49:26,631 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 3: 'description' -> 'RepliGen is an AI-powered document automation syst'
+2026-01-01 16:49:26,647 - TemplateMapper - INFO - Advancing record for SectionType.PROJECTS to index 1 (Label: project title)
+2026-01-01 16:49:26,648 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 0: 'project title' -> 'Project Name:  Limerick'
+2026-01-01 16:49:26,648 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 1: 'technologies' -> 'N/A'
+2026-01-01 16:49:26,648 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 2: 'role' -> 'Project Manager'
+2026-01-01 16:49:26,648 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 3: 'description' -> 'Limerick Sports is a Power BI–based analytics proj'
+2026-01-01 16:49:26,664 - TemplateMapper - INFO - Advancing record for SectionType.PROJECTS to index 2 (Label: project title)
+2026-01-01 16:49:26,664 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 2 field 0: 'project title' -> 'Project Name:  SmileAI-Operations'
+2026-01-01 16:49:26,672 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 2 field 1: 'technologies' -> 'N/A'
+2026-01-01 16:49:26,679 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 2 field 2: 'role' -> 'Project Manager'
+2026-01-01 16:49:26,681 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 2 field 3: 'description' -> 'SmileAI – Operations is an ongoing healthcare auto'
+2026-01-01 16:49:26,688 - TemplateMapper - INFO - Advancing record for SectionType.PROJECTS to index 3 (Label: project title)
+2026-01-01 16:49:26,688 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 3 field 0: 'project title' -> 'Project Name:  ACEI Global Website Development'
+2026-01-01 16:49:26,691 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 3 field 1: 'technologies' -> 'N/A'
+2026-01-01 16:49:26,692 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 3 field 2: 'role' -> 'Project Manager'
+2026-01-01 16:49:26,695 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 3 field 3: 'description' -> 'ACEI (American Council for Education International'
+2026-01-01 16:49:26,772 - TemplateMapper - INFO - SUCCESS: Saved document to output\d932530b-312c-4aee-8b46-5154c298003e.docx
+2026-01-01 16:49:26,778 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 16:50:34,749 - CV-Reformatter-MVP - INFO - Processing Upload: AM0296_Ummer Faruk T S.pdf (7ed365c3-6aeb-42d3-94c4-5226ab8a406d)
+2026-01-01 16:50:36,579 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'Work Experience'
+2026-01-01 16:50:36,579 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> skills at line: 'Key Skills and Knowledge'
+2026-01-01 16:50:36,579 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> projects at line: 'Project Details'
+2026-01-01 16:50:36,579 - CV-Reformatter-MVP - INFO - Segment Switch: projects -> education at line: 'Education'
+2026-01-01 16:50:36,710 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 16:50:36,712 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 16:50:36,717 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 16:50:36,725 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 16:50:36,725 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 16:50:36,739 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 16:50:36,757 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 3 blocks.
+2026-01-01 16:50:36,757 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 16:50:36,881 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'PROJECTS', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 16:50:36,881 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Ummer Faruk T S Dedicated Manual Tester with a str'
+2026-01-01 16:50:36,885 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'Junior QA Engineer'
+2026-01-01 16:50:36,890 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: junior qa engineer' -> 'Junior QA Engineer'
+2026-01-01 16:50:36,891 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: company: junior qa engineer)
+2026-01-01 16:50:36,891 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'company: junior qa engineer' -> 'Sutherland Global Services Pvt Ltd'
+2026-01-01 16:50:36,893 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: role: [fill here])
+2026-01-01 16:50:36,893 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 0: 'role: [fill here]' -> 'Field Office Supervisor'
+2026-01-01 16:50:36,902 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 1: 'role: field office supervisor' -> 'Field Office Supervisor'
+2026-01-01 16:50:36,906 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 2: 'duration: [fill here]
+responsibilities:
+[fill here]' -> 'October 2021'
+2026-01-01 16:50:36,907 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 3 (Label: role: [fill here])
+2026-01-01 16:50:36,916 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 0: 'project title' -> 'CompBldr'
+2026-01-01 16:50:36,916 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 1: 'technologies' -> 'MS Office, Google Sheets, Guidde AI Video Document'
+2026-01-01 16:50:36,916 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 2: 'role' -> 'QA Engineer'
+2026-01-01 16:50:36,921 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 3: 'description' -> 'Overview: CompBldr is a multi-module Compensation '
+2026-01-01 16:50:36,974 - TemplateMapper - INFO - SUCCESS: Saved document to output\7ed365c3-6aeb-42d3-94c4-5226ab8a406d.docx
+2026-01-01 16:50:36,976 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 16:51:08,809 - CV-Reformatter-MVP - INFO - Processing Upload: AM0291 Saju Sukumaran.pdf (e1903c7a-af02-41b9-9ec2-faa0aced46d1)
+2026-01-01 16:51:10,624 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'Work Experience'
+2026-01-01 16:51:10,624 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> skills at line: 'Key Skills and Knowledge'
+2026-01-01 16:51:10,624 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> education at line: 'Education'
+2026-01-01 16:51:10,624 - CV-Reformatter-MVP - INFO - Segment Switch: education -> certifications at line: 'Certifications'
+2026-01-01 16:51:10,624 - CV-Reformatter-MVP - INFO - Segment Switch: certifications -> projects at line: 'Project Details'
+2026-01-01 16:51:10,807 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 16:51:10,812 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 16:51:10,812 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 16:51:10,820 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 16:51:10,822 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 16:51:10,824 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 16:51:10,833 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 3 blocks.
+2026-01-01 16:51:10,833 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 16:51:10,986 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'PROJECTS', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 16:51:10,992 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Saju Sukumaran 25+ years of experience in various '
+2026-01-01 16:51:10,992 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'Technical Consultant'
+2026-01-01 16:51:10,992 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: technical consultant' -> 'Technical Consultant'
+2026-01-01 16:51:11,002 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: company: technical consultant)
+2026-01-01 16:51:11,002 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'company: technical consultant' -> 'SabTech Consultancy W.L.L, Bahrain'
+2026-01-01 16:51:11,007 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: role: [fill here])
+2026-01-01 16:51:11,007 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 0: 'role: [fill here]' -> 'February 2003'
+2026-01-01 16:51:11,010 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 1: 'role: february 2003' -> 'February 2003'
+2026-01-01 16:51:11,010 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 3 (Label: company: february 2003)
+2026-01-01 16:51:11,013 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 0: 'project title' -> 'Project'
+2026-01-01 16:51:11,023 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 1: 'technologies' -> 'Visual Studio Code, pgAdmin,  Git'
+2026-01-01 16:51:11,023 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 2: 'role' -> 'Architect and Project Manager'
+2026-01-01 16:51:11,026 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 3: 'description' -> 'ReviewCloud (RC) is a performance management syste'
+2026-01-01 16:51:11,090 - TemplateMapper - INFO - SUCCESS: Saved document to output\e1903c7a-af02-41b9-9ec2-faa0aced46d1.docx
+2026-01-01 16:51:11,090 - CV-Reformatter-MVP - INFO - Using Extractor_Master template for Standard Process.
+2026-01-01 16:52:37,399 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'Work Experience'
+2026-01-01 16:52:37,401 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> skills at line: 'Key Skills and Knowledge'
+2026-01-01 16:52:37,401 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> education at line: 'Education'
+2026-01-01 16:52:37,401 - CV-Reformatter-MVP - INFO - Segment Switch: education -> certifications at line: 'Certifications'
+2026-01-01 16:52:37,401 - CV-Reformatter-MVP - INFO - Segment Switch: certifications -> projects at line: 'Project Details'
+2026-01-01 16:52:37,540 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 16:52:37,544 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 16:52:37,544 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 16:52:37,548 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 16:52:37,552 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 16:52:37,556 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 16:52:37,566 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 3 blocks.
+2026-01-01 16:52:37,567 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 16:52:37,672 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'PROJECTS', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 16:52:37,672 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'Saju Sukumaran 25+ years of experience in various '
+2026-01-01 16:52:37,676 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'Technical Consultant'
+2026-01-01 16:52:37,678 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: technical consultant' -> 'Technical Consultant'
+2026-01-01 16:52:37,680 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: company: technical consultant)
+2026-01-01 16:52:37,680 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'company: technical consultant' -> 'SabTech Consultancy W.L.L, Bahrain'
+2026-01-01 16:52:37,684 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: role: [fill here])
+2026-01-01 16:52:37,684 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 0: 'role: [fill here]' -> 'February 2003'
+2026-01-01 16:52:37,686 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 2 field 1: 'role: february 2003' -> 'February 2003'
+2026-01-01 16:52:37,687 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 3 (Label: company: february 2003)
+2026-01-01 16:52:37,695 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 0: 'project title' -> 'Project'
+2026-01-01 16:52:37,698 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 1: 'technologies' -> 'Visual Studio Code, pgAdmin,  Git'
+2026-01-01 16:52:37,699 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 2: 'role' -> 'Architect and Project Manager'
+2026-01-01 16:52:37,702 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 3: 'description' -> 'ReviewCloud (RC) is a performance management syste'
+2026-01-01 16:52:37,750 - TemplateMapper - INFO - SUCCESS: Saved document to output\d50a03a0-3c73-4ee8-9f6b-128a70e2999e_Extractor_Master.docx
+2026-01-01 16:53:12,061 - CV-Reformatter-MVP - INFO - Segment Switch: summary -> experience at line: 'Work Experience'
+2026-01-01 16:53:12,063 - CV-Reformatter-MVP - INFO - Segment Switch: experience -> skills at line: 'Key Skills and Knowledge'
+2026-01-01 16:53:12,063 - CV-Reformatter-MVP - INFO - Segment Switch: skills -> education at line: 'Education'
+2026-01-01 16:53:12,063 - CV-Reformatter-MVP - INFO - Segment Switch: education -> projects at line: 'Project Details'
+2026-01-01 16:53:12,153 - TemplateMapper - INFO - Template Section transition: UNKNOWN -> SUMMARY at 'PROFESSIONAL SUMMARY'
+2026-01-01 16:53:12,158 - TemplateMapper - INFO - Template Section transition: SUMMARY -> SKILLS at 'TECHNICAL SKILLS'
+2026-01-01 16:53:12,161 - TemplateMapper - INFO - Template Section transition: SKILLS -> WORK_EXPERIENCE at 'WORK EXPERIENCE'
+2026-01-01 16:53:12,163 - TemplateMapper - INFO - Template Section transition: WORK_EXPERIENCE -> PROJECTS at 'PROJECTS'
+2026-01-01 16:53:12,165 - TemplateMapper - INFO - Template Section transition: PROJECTS -> EDUCATION at 'EDUCATION'
+2026-01-01 16:53:12,170 - TemplateMapper - INFO - Template Section transition: EDUCATION -> CERTIFICATIONS at 'CERTIFICATIONS'
+2026-01-01 16:53:12,175 - TemplateMapper - INFO - Replicated SectionType.PROJECTS: Scaled up from 1 to 2 blocks.
+2026-01-01 16:53:12,177 - TemplateMapper - INFO - Replicated SectionType.WORK_EXPERIENCE: Scaled up from 1 to 2 blocks.
+2026-01-01 16:53:12,177 - TemplateMapper - INFO - Dynamic block replication complete.
+2026-01-01 16:53:12,292 - TemplateMapper - INFO - Detected 8 anchors in document for mapping: ['SUMMARY', 'SKILLS', 'WORK_EXPERIENCE', 'WORK_EXPERIENCE', 'PROJECTS', 'PROJECTS', 'EDUCATION', 'CERTIFICATIONS']
+2026-01-01 16:53:12,293 - TemplateMapper - DEBUG - Injecting into SUMMARY rec 0 field 0: '' -> 'PRADEEP KUMAR P C 10+ years of experience in datab'
+2026-01-01 16:53:12,299 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 0: 'role: [fill here]' -> 'Senior Technology Lead-DIC'
+2026-01-01 16:53:12,302 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 1: 'role: senior technology lead-dic' -> 'Senior Technology Lead-DIC'
+2026-01-01 16:53:12,305 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 0 field 2: 'duration: [fill here]
+responsibilities:
+[fill here]' -> 'February 2018 to present'
+2026-01-01 16:53:12,308 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 1 (Label: role: [fill here])
+2026-01-01 16:53:12,308 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 0: 'role: [fill here]' -> 'July 2009'
+2026-01-01 16:53:12,310 - TemplateMapper - DEBUG - Injecting into WORK_EXPERIENCE rec 1 field 1: 'role: july 2009' -> 'July 2009'
+2026-01-01 16:53:12,312 - TemplateMapper - INFO - Advancing record for SectionType.WORK_EXPERIENCE to index 2 (Label: company: july 2009)
+2026-01-01 16:53:12,315 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 0: 'project title' -> 'Project'
+2026-01-01 16:53:12,318 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 1: 'technologies' -> 'Node-js,angular-js,Postgresql,nginx'
+2026-01-01 16:53:12,320 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 0 field 2: 'description' -> 'Tangram Creating Database Design, procedures and t'
+2026-01-01 16:53:12,325 - TemplateMapper - INFO - Advancing record for SectionType.PROJECTS to index 1 (Label: project title)
+2026-01-01 16:53:12,327 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 0: 'project title' -> 'Server monitoring and optimization, server Upgrada'
+2026-01-01 16:53:12,329 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 1: 'technologies' -> 'WSO2- Integration Manager, WSO2-API Manager, wso2-'
+2026-01-01 16:53:12,333 - TemplateMapper - DEBUG - Injecting into PROJECTS rec 1 field 2: 'description' -> 'TRAINERY Monitoring and Managing aws cloud environ'
+2026-01-01 16:53:12,397 - TemplateMapper - INFO - SUCCESS: Saved document to output\44bda170-1ae8-4e7a-a0ec-b7aa33a68cd6_Extractor_Master.docx
+2026-01-01 16:58:30,700 - CV-Reformatter-MVP - INFO - LayoutLMv3 model loaded successfully on CPU.

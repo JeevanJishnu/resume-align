@@ -1,0 +1,1 @@
+{"projects": [{"name": "AI CV Parser", "description": "Built a FastAPI based parser using LayoutLM", "confidence": 0.92}, {"name": "E-commerce App", "description": "Developed a React Native application", "confidence": 0.88}], "skills": ["Python", "FastAPI", "PyTorch", "OpenCV"], "overall_confidence": 0.9}

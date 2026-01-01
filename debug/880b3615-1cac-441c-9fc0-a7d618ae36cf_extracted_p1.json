@@ -1,0 +1,71 @@
+{
+    "full_name": "Pradeep Kumar P C",
+    "email": "N/A",
+    "phone": "N/A",
+    "linkedin": "N/A",
+    "summary": "Pradeep Kumar P C Senior Technology Lead – Infrastructure & DevOps Experienced Infrastructure and DevOps Engineer with over 10 years of experience in Linux system administration, cloud architecture, and automation. Proven ability to design, implement, and optimize high-availability cloud and on-premise infrastructures using AWS, Azure, Docker, and CI/CD pipelines. Strong background in configuration management, database optimization, and infrastructure-as-code implementation, with hands-on experience automating deployment workflows and managing production environments for enterprise applications.",
+    "skills": [
+        "Bash scripting",
+        "CI/CD",
+        "Load Balancers",
+        "Security Groups",
+        "Postgresql",
+        "Mysql",
+        "Python",
+        "VPN setup",
+        "Cloud & DevOps",
+        "CodePipeline",
+        "Bash",
+        "Databases",
+        "SQL",
+        "Nginx",
+        "Apache",
+        "VPN",
+        "Monitoring",
+        "Languages",
+        "VB.NET",
+        "C++",
+        "Dockerized",
+        "Ansible"
+    ],
+    "tools": [
+        "Docker",
+        "GIT",
+        "Jenkins",
+        "AWS",
+        "Azure"
+    ],
+    "work_experience": [
+        {
+            "company": "AlignMinds Technologies Pvt. Ltd. — Senior Technology Lead (Feb 2018",
+            "role": "Present)",
+            "duration": "N/A",
+            "location": "N/A",
+            "responsibilities": "Lead DevOps and Infrastructure initiatives, including cloud setup, deployment automation, and server optimization. Designed and implemented high-availability architectures on AWS using Elastic Load Balancers, auto-scaling, and Dockerized environments. Managed server monitoring, firewall configurations, VPNs, and security hardening for Automated environment provisioning and deployment workflows using CI/CD pipelines and Ansible playbooks for select projects. Guided developers in optimizing PostgreSQL and MySQL performance through indexing, configuration tuning, and replication strategies. Supported continuous improvement by researching new DevOps and automation tools."
+        }
+    ],
+    "projects": [
+        {
+            "title": "Project",
+            "tech": "N/A",
+            "duration": "N/A",
+            "role": "",
+            "responsibilities": "",
+            "details": "Administered Linux servers, managed database design, and conducted performance tuning. Installed and maintained database and web servers; deployed applications in on- premises and cloud environments. Wrote stored procedures, views, and database triggers for high-performance applications."
+        }
+    ],
+    "education": [
+        {
+            "degree": "Diploma in Computer Science and Engineering",
+            "institution": "N/A",
+            "duration": "N/A"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "(Currently not certified, but equivalent practical experience in Red Hat",
+            "issuer": "based systems and Ansible automation.) Highlighted Technical Stack Category",
+            "url": "N/A"
+        }
+    ]
+}

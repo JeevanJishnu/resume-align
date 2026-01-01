@@ -1,0 +1,106 @@
+{
+    "full_name": "KHILA",
+    "email": "N/A",
+    "phone": "N/A",
+    "linkedin": "N/A",
+    "summary": "Experienced Project Manager with over 10+ years of experience in IT project management, customer service, Business Analysis, and project coordination. Certified Scrum Master skilled in Agile methodologies, project documentation, RACI matrix, RAID analysis, and tools like Jira, Asana, and Microsoft Project Professional. Strong Business Analysis Expertise: Proficient in requirements elicitation, stakeholder analysis, process mapping, and BRD (Business Requirements Document) creation, ensuring alignment between client needs and project deliverables. Change Management: Skilled in managing scope and process changes through structured communication plans and stakeholder training. Business Process Optimization: Focused on continuous improvement through process mapping, automation, and iterative feedback loops. Requirements Traceability: Ensures all business and technical requirements are documented, validated, and traceable throughout the project lifecycle. User Story Mapping: Experienced in crafting and managing user stories, acceptance criteria, and backlog refinement sessions to support Agile development teams. Quality Assurance Coordination: Oversees QA planning, test case reviews, defect triage, and UAT support for successful project closure. Negotiation and Conflict Resolution: Adept at resolving stakeholder disagreements and facilitating consensus for smooth delivery. Presentation and Reporting: Skilled in preparing and presenting project updates, risk assessments, and performance insights to executives and clients. Client Engagement: Experienced in requirements elicitation and effective communication with global clients in Ireland and the USA. Team Leadership: Strong leadership background managing operational and technical teams in high-impact AI, BI, and automation projects. Emotional Intelligence: Leads with empathy, motivating teams and maintaining high morale in dynamic, fast-paced environments. Excellent Communication and Team Management Skills, adept at coordinating with cross-functional teams and maintaining efficient project workflows in dynamic environments.",
+    "skills": [
+        "Scrum",
+        "Team management",
+        "BRD creation",
+        "Project costing",
+        "Gap analysis",
+        "Process mapping",
+        "Sprint planning",
+        "Coordination",
+        "Control",
+        "Microsoft",
+        "Project",
+        "Professional",
+        "RACI Matrix",
+        "RAID Analysis"
+    ],
+    "tools": [
+        "Jira",
+        "Asana"
+    ],
+    "work_experience": [
+        {
+            "company": "AlignMinds Technologies",
+            "role": "N/A",
+            "duration": "March 2021 to Present",
+            "location": "Kochi",
+            "responsibilities": ""
+        },
+        {
+            "company": "Project Manager",
+            "role": "Present",
+            "duration": "September 2023",
+            "location": "N/A",
+            "responsibilities": "Led project management efforts for multiple projects, ensuring effective coordination among cross-functional teams to meet project goals within Conducted RACI and RAID analyses to ensure role clarity, minimize risks, and identify project dependencies, resulting in streamlined workflows and enhanced team accountability. Actively engaged in client communications to manage expectations, provide updates, and gather feedback, ensuring client satisfaction and alignment with project objectives. Worked closely with clients to identify business objectives, gather requirements, and document functional specifications, ensuring clear alignment on project scope and outcomes."
+        },
+        {
+            "company": "Associate Project Lead March2021",
+            "role": "▪",
+            "duration": "September 2023",
+            "location": "N/A",
+            "responsibilities": "Led the MiBook project, handling end-to-end requirements analysis, BRD creation, and coordinating with the development team to deliver high-quality Collaborated with clients and internal teams to translate business needs into actionable project plans, using Jira and Asana for task management and Ensured consistent and transparent communication across stakeholders, keeping all parties informed and aligned on project progress and objectives."
+        },
+        {
+            "company": "Metarouge Innovations",
+            "role": "Manager Customer Relationship and Project coordination",
+            "duration": "September 2014 to September 2018",
+            "location": "Kochi",
+            "responsibilities": "Addressed problems with service delivery to maintain and enhance Updated the stakeholders and team members with the development, issues Provided support in creating and implementing project plans. Communicated with various teams, managements, and stakeholders Acted as point of contact for external communications."
+        },
+        {
+            "company": "RevenueMed India PVT Ltd",
+            "role": "Associate IP Operations",
+            "duration": "November 2010 to April 2012",
+            "location": "Trivandrum",
+            "responsibilities": "Worked as an IP coder for US clients. Prepared business documents for upper management and executives. Maintained effective relationships with coworkers and clients. Identified risks and opportunity areas and highlighted them to the team."
+        }
+    ],
+    "projects": [
+        {
+            "title": "Project Name:  RepliGen",
+            "tech": "N/A",
+            "duration": "N/A",
+            "role": "Project Manager",
+            "responsibilities": "",
+            "details": "RepliGen is an AI-powered document automation system designed for Treaty Digital to streamline purchase order processing through intelligent email and document handling. The solution leverages Microsoft Azure services to automate end-to-end workflows, reducing manual effort and improving operational accuracy. Directed end-to-end project execution, from requirement gathering to deployment, ensuring timely delivery within scope and budget. Collaborated with cross-functional teams to design an automation workflow using Azure Logic Apps and AI Document Intelligence. Coordinated with client stakeholders to define objectives, manage expectations, and align deliverables with business goals. Managed cross-functional teams distributed across Afghanistan, Ireland, and India, ensuring seamless coordination and timely project delivery across time zones. Monitored progress through Asana, managing risks, dependencies, and change requests effectively. Established robust quality controls and reporting mechanisms, including daily operational summaries and automated error alerts. Ensured smooth client handover, documentation, and knowledge transition for operational continuity."
+        },
+        {
+            "title": "Project Name:  Limerick",
+            "tech": "N/A",
+            "duration": "N/A",
+            "role": "Project Manager",
+            "responsibilities": "",
+            "details": "Limerick Sports is a Power BI–based analytics project for Treaty Digital aimed at improving performance tracking for coaching staff. The engagement focused on optimizing dashboards, refining visual insights, and improving user experience for data-driven decision-making. Led the enhancement and optimization of Treaty Digital’s Power BI dashboards to meet client-defined performance and usability goals. Managed cross-functional teams distributed across Ireland, and India, ensuring seamless coordination and timely project delivery across time zones. Managed client communications to gather requirements, validate visual designs, and ensure stakeholder alignment throughout the project lifecycle. Coordinated with data analysts and BI developers to streamline data models and visualizations, improving efficiency and clarity. Implemented agile sprint planning and review sessions to ensure incremental, high-quality deliverables. Monitored progress, conducted quality reviews, and facilitated dashboard deployment to the Power BI Service with automated refresh setup. Delivered a user-centric solution that improved analytical visibility and decision-making for coaching staff."
+        },
+        {
+            "title": "Project Name:  SmileAI-Operations",
+            "tech": "N/A",
+            "duration": "N/A",
+            "role": "Project Manager",
+            "responsibilities": "",
+            "details": "SmileAI – Operations is an ongoing healthcare automation initiative supporting the SmileAI platform, which streamlines dental billing workflows for U.S.-based clients. The engagement covers end-to-end project ownership, including client onboarding, automation governance, team management, and delivery oversight. Directed day-to-day operations and automation delivery for multiple U.S.- based clients, ensuring adherence to SLAs and compliance standards. Managed and facilitated fast resolution of issues in operations coordination, minimizing downtime and ensuring smooth cross-functional collaboration. Supervised RPA developers and operations teams in India to deliver high- quality automation outcomes during overlapping work hours with U.S. clients. Partnered with clients to define objectives, prioritize automation enhancements, and align deliverables with evolving business requirements. Monitored key project metrics, tracked automation performance, and drove continuous improvement initiatives to enhance process efficiency and accuracy. Implemented structured SOPs, risk controls, and governance processes to maintain transparency and accountability across all project phases. Prepared and reviewed operational and performance reports, ensuring leadership visibility and timely escalation management. Fostered a culture of ownership, proactive problem-solving, and collaboration across distributed teams."
+        },
+        {
+            "title": "Project Name:  ACEI Global Website Development",
+            "tech": "N/A",
+            "duration": "N/A",
+            "role": "Project Manager",
+            "responsibilities": "",
+            "details": "ACEI (American Council for Education International) is a global organization dedicated to providing educational services, focusing on academic credential evaluation, international education resources, and professional development for educators and institutions worldwide. It aims to facilitate global mobility and educational excellence by ensuring accurate, fair recognition of academic qualifications cross borders. Managed the redesign and development of ACEI Global’s WordPress website, focused on enhancing user experience and visual appeal. Conducted requirement-gathering sessions with the client, prepared detailed BRDs, and established a clear project roadmap aligned with client expectations. Utilized Asana for task tracking and milestone monitoring, ensuring timely completion and high-quality project delivery. Prepared and reviewed operational and performance reports, ensuring leadership visibility and timely escalation management. Fostered a culture of ownership, proactive problem-solving, and collaboration across distributed teams."
+        }
+    ],
+    "education": [],
+    "certifications": [
+        {
+            "title": "Certified ScrumMaster (CSM) Project Name:  Briive | Thailand Role: Project Manager Project Overview:  Briive is a location",
+            "issuer": "tracking app designed to enhance safety and convenience by providing real-time tracking of users' locations. It offers features such as route history, geofencing alerts, and location sharing to keep users connected and informed about their whereabouts. Responsibilities: ▪ Managed and analyzed the Briive project, focusing on effective team coordination and timely high-quality solution delivery. ▪ Conducted stakeholder analysis to identify project stakeholders and define their requirements incorporating these into a structured project plan. ▪ Engaged in RAID analysis to identify and proactively address potential risks and dependencies, maintaining project momentum. ▪ Used Asana for Sprint planning, task assignments, and tracking, keeping the project within scope and ensuring frequent client feedback was addressed promptly. Project Name:  MiBook Role: Associate Project Lead Project Overview:  MiBook is a bookkeeping app tailored for small and medium- sized enterprises (SMEs) to simplify financial management. It provides tools for tracking expenses, managing invoices, and generating financial reports, helping SMEs maintain clear and organized records effortlessly. Responsibilities: ▪ Directed the MiBook project, with a focus on establishing a secure platform for client data storage and access. ▪ Documented requirements in a detailed BRD, covering all client-specified features, functional workflows, and data access requirements. ▪ Worked with cross-functional teams to map out business processes, ensuring project alignment with client expectations and functional specifications. ▪ Performed gap analysis and created wireframes to illustrate process flows, assisting the development team in translating requirements into a functional product.",
+            "url": "N/A"
+        }
+    ]
+}
