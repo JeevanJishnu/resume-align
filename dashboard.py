@@ -5,7 +5,6 @@ import os
 import pandas as pd
 from PIL import Image
 import io
-import mammoth
 
 # Page Config
 # Page Config
