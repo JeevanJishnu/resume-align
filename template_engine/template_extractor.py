@@ -82,7 +82,7 @@ def iterate_doc_content(doc):
     # 2. Body
     yield from _process_container(doc)
 
-def is_section_header(element) -> tuple[SectionType, float, bool]:
+def is_section_header(element) -> 'tuple[SectionType, float, bool]':
     if not isinstance(element, Paragraph):
         return SectionType.UNKNOWN, 0.0, False
     text_clean = element.text.strip()
